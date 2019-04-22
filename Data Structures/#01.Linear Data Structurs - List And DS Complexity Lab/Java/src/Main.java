@@ -13,12 +13,7 @@ public class Main {
         arrayList.add(6);
         arrayList.add(7);
 
-        arrayList.removeAt(0);
-        arrayList.removeAt(0);
-        arrayList.removeAt(0);
-        arrayList.removeAt(0);
-        arrayList.removeAt(0);
-//        arrayList.removeAt(1);
+        System.out.println(arrayList.get(6));
 
         System.out.println();
     }

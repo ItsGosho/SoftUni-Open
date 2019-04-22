@@ -79,6 +79,15 @@ public class ArrayList<T> {
         }
     }
 
+    public T get(int index) {
+
+        if (index >= this.elementsCount) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        return this.values[index];
+    }
+
     public int getCount() {
         return this.elementsCount;
     }
