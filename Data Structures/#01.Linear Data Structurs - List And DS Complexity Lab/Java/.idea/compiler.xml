@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Data Structures List" />
-        <module name="itsgosho" />
+        <module name="List And DS Complexity Lab" />
       </profile>
     </annotationProcessing>
   </component>

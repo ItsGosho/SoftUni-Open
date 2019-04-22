@@ -1,13 +1,26 @@
 
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(123);
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        arrayList.add(5);
+        arrayList.add(6);
+        arrayList.add(7);
+
+        arrayList.removeAt(0);
+        arrayList.removeAt(0);
+        arrayList.removeAt(0);
+        arrayList.removeAt(0);
+        arrayList.removeAt(0);
+//        arrayList.removeAt(1);
+
+        System.out.println();
     }
 
 }

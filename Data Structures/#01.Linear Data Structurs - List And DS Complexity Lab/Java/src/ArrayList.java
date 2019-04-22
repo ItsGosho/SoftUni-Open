@@ -31,25 +31,55 @@ public class ArrayList<T> {
         this.size *= 2;
     }
 
-    public void removeAt(int index) {
+    public T removeAt(int index) {
 
-        if(index >= this.size || index < 0){
+        if (index >= this.size || index < 0) {
             throw new IllegalArgumentException();
         }
 
+        T removedElement = this.values[index];
         T[] newArray = (T[]) new Object[this.size];
 
-        for (int i = 0; i < this.size-1; i++) {
-            if (index != i) {
-                newArray[i] = this.values[i];
-            }
-        }
-
+        this.makeCopyWithoutSpecificIndex(newArray, index);
         this.values = newArray;
         this.elementsCount--;
+        this.shrink();
+
+        return removedElement;
     }
 
-    public int getCount(){
+    private void shrink() {
+
+        if (this.size > 2) {
+            int newSize = this.elementsCount <= this.size / 2 ? this.size / 2 : this.size;
+            T[] newArray = (T[]) new Object[newSize];
+
+            for (int i = 0; i < newSize; i++) {
+                newArray[i] = this.values[i];
+            }
+
+            this.values = newArray;
+            this.size = newSize;
+        }
+
+    }
+
+    private void makeCopyWithoutSpecificIndex(T[] arrayToFill, int index) {
+
+        int newArrayCounter = 0;
+        int oldArrayCounter = 0;
+        while (newArrayCounter != this.elementsCount - 1) {
+
+            if (oldArrayCounter != index) {
+                arrayToFill[newArrayCounter] = this.values[oldArrayCounter];
+                newArrayCounter++;
+            }
+
+            oldArrayCounter++;
+        }
+    }
+
+    public int getCount() {
         return this.elementsCount;
     }
 
