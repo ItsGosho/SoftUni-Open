@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List And DS Complexity", "List And DS Complexity.csproj", "{6C9B43E8-3A99-4EA6-9D5D-AFCB5427AFA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList", "ArrayList\ArrayList.csproj", "{229C2B92-F952-4FDD-8359-BAE8C0522284}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C9B43E8-3A99-4EA6-9D5D-AFCB5427AFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9B43E8-3A99-4EA6-9D5D-AFCB5427AFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9B43E8-3A99-4EA6-9D5D-AFCB5427AFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9B43E8-3A99-4EA6-9D5D-AFCB5427AFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{229C2B92-F952-4FDD-8359-BAE8C0522284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229C2B92-F952-4FDD-8359-BAE8C0522284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229C2B92-F952-4FDD-8359-BAE8C0522284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{229C2B92-F952-4FDD-8359-BAE8C0522284}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6FFAA2A-4E72-4DB9-BDE4-7B97E96907A0}
+	EndGlobalSection
+EndGlobal
