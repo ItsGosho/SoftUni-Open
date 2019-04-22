@@ -77,24 +77,31 @@ public class ArrayList<T>
         T removedElement = this.elements[index];
         T[] newArray = new T[this.capacity];
 
-        for (int i = 0; i < index; i++)
-        {
-            newArray[i] = this.elements[i];
-        }
-
-        for (int i = index; i < this.count; i++)
-        {
-            if (i + 1 < this.count)
-            {
-                newArray[i] = this.elements[i + 1];
-            }
-        }
+        this.MakeCopyWithoutSpecificIndex(newArray, index);
 
         this.elements = newArray;
         this.count--;
         this.Shrink();
 
         return removedElement;
+    }
+
+    private void MakeCopyWithoutSpecificIndex(T[] arrayToFill, int index)
+    {
+
+        int newArrayCounter = 0;
+        int oldArrayCounter = 0;
+        while (newArrayCounter != this.count - 1)
+        {
+
+            if (oldArrayCounter != index)
+            {
+                arrayToFill[newArrayCounter] = this.elements[oldArrayCounter];
+                newArrayCounter++;
+            }
+
+            oldArrayCounter++;
+        }
     }
 
     private void Shrink()
