@@ -1,0 +1,6 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\T01_Sum_And_Average\obj\Debug\T01_Sum_And_Average.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\T01_Sum_And_Average\bin\Debug\T01_Sum_And_Average.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\T01_Sum_And_Average\bin\Debug\T01_Sum_And_Average.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\T01_Sum_And_Average\bin\Debug\T01_Sum_And_Average.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\T01_Sum_And_Average\obj\Debug\T01_Sum_And_Average.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\T01_Sum_And_Average\obj\Debug\T01_Sum_And_Average.pdb

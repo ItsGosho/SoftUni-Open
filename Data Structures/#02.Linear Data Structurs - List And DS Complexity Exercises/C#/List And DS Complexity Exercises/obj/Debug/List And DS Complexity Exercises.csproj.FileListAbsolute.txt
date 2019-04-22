@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\bin\Debug\List And DS Complexity Exercises.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\bin\Debug\List And DS Complexity Exercises.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\bin\Debug\List And DS Complexity Exercises.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\obj\Debug\List And DS Complexity Exercises.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\obj\Debug\List And DS Complexity Exercises.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\obj\Debug\List And DS Complexity Exercises.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\List And DS Complexity Exercises\obj\Debug\List And DS Complexity Exercises.pdb

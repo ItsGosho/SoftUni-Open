@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\bin\Debug\T05_Count_Occurrences.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\bin\Debug\T05_Count_Occurrences.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\bin\Debug\T05_Count_Occurrences.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\obj\Debug\T05_Count_Occurrences.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\obj\Debug\T05_Count_Occurrences.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\obj\Debug\T05_Count_Occurrences.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T05_Count_Occurrences\obj\Debug\T05_Count_Occurrences.pdb
