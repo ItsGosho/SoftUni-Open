@@ -7,7 +7,7 @@
     <ProjectGuid>{DE4AE842-33F9-4256-BB35-6855EC1C7866}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ReversedList</RootNamespace>
-    <AssemblyName>ReversedList</AssemblyName>
+    <AssemblyName>T06_ReversedList</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

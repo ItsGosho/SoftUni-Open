@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T06_Reversed_List", "..\Rev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T02_Sort_Words", "..\T02_Sort Words\T02_Sort_Words.csproj", "{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T07_Distance_Laby", "..\T07_Distance_Laby\T07_Distance_Laby.csproj", "{D04ECC37-70C5-46D5-A990-0D820375271D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04ECC37-70C5-46D5-A990-0D820375271D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04ECC37-70C5-46D5-A990-0D820375271D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04ECC37-70C5-46D5-A990-0D820375271D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04ECC37-70C5-46D5-A990-0D820375271D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

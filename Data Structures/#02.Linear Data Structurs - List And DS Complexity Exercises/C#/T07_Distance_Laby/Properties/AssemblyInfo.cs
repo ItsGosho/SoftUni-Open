@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("T02_Sort Words")]
+[assembly: AssemblyTitle("T07_Distance_Laby")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sort Words")]
+[assembly: AssemblyProduct("T07_Distance_Laby")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4d3679d3-07b6-4c15-a505-5322aaaeb0e3")]
+[assembly: Guid("d04ecc37-70c5-46d5-a990-0d820375271d")]
 
 // Version information for an assembly consists of the following four values:
 //
