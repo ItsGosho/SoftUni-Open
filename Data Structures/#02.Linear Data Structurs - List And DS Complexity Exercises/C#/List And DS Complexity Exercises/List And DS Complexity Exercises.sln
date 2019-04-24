@@ -7,17 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List And DS Complexity Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T01_Sum_And_Average", "T01_Sum_And_Average\T01_Sum_And_Average.csproj", "{C302ADCA-6DA0-4ADC-8EE2-65EA381D0B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T03_Longest_Subsequence", "..\T03_Longest_Subsequence\T03_Longest_Subsequence.csproj", "{F876D945-1373-43BA-8FAE-CD2574B2F9E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T02_Sort_Words", "T02_Sort Words\T02_Sort_Words.csproj", "{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T04_Remove_Odd_Occurrences", "..\T04_Remove_Odd_Occurrences\T04_Remove_Odd_Occurrences.csproj", "{01797BC7-F621-41A8-BAF3-4A172D5D8ABB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T03_Longest_Subsequence", "T03_Longest_Subsequence\T03_Longest_Subsequence.csproj", "{F876D945-1373-43BA-8FAE-CD2574B2F9E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T05_Count_Occurrences", "..\T05_Count_Occurrences\T05_Count_Occurrences.csproj", "{A194441A-2FC1-4BFA-802E-C40546C79BCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T04_Remove_Odd_Occurrences", "T04_Remove_Odd_Occurrences\T04_Remove_Odd_Occurrences.csproj", "{01797BC7-F621-41A8-BAF3-4A172D5D8ABB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T06_Reversed_List", "..\ReversedList\T06_Reversed_List.csproj", "{DE4AE842-33F9-4256-BB35-6855EC1C7866}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T05_Count_Occurrences", "T05_Count_Occurrences\T05_Count_Occurrences.csproj", "{A194441A-2FC1-4BFA-802E-C40546C79BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T02_Sort_Words", "..\T02_Sort Words\T02_Sort_Words.csproj", "{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T06_Reversed_List", "ReversedList\T06_Reversed_List.csproj", "{DE4AE842-33F9-4256-BB35-6855EC1C7866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T07_Distance_Laby", "..\T07_Distance_Laby\T07_Distance_Laby.csproj", "{D04ECC37-70C5-46D5-A990-0D820375271D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T07_Distance_Laby", "T07_Distance_Laby\T07_Distance_Laby.csproj", "{D04ECC37-70C5-46D5-A990-0D820375271D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T08_Doubly_Linked_List", "T08_Doubly_Linked_List\T08_Doubly_Linked_List.csproj", "{37EE5859-1EF4-43D5-806A-A9EF640CDA1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C302ADCA-6DA0-4ADC-8EE2-65EA381D0B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C302ADCA-6DA0-4ADC-8EE2-65EA381D0B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C302ADCA-6DA0-4ADC-8EE2-65EA381D0B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F876D945-1373-43BA-8FAE-CD2574B2F9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F876D945-1373-43BA-8FAE-CD2574B2F9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F876D945-1373-43BA-8FAE-CD2574B2F9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,14 +55,14 @@ Global
 		{DE4AE842-33F9-4256-BB35-6855EC1C7866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE4AE842-33F9-4256-BB35-6855EC1C7866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE4AE842-33F9-4256-BB35-6855EC1C7866}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D3679D3-07B6-4C15-A505-5322AAAEB0E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D04ECC37-70C5-46D5-A990-0D820375271D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D04ECC37-70C5-46D5-A990-0D820375271D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D04ECC37-70C5-46D5-A990-0D820375271D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D04ECC37-70C5-46D5-A990-0D820375271D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EE5859-1EF4-43D5-806A-A9EF640CDA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EE5859-1EF4-43D5-806A-A9EF640CDA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EE5859-1EF4-43D5-806A-A9EF640CDA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EE5859-1EF4-43D5-806A-A9EF640CDA1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

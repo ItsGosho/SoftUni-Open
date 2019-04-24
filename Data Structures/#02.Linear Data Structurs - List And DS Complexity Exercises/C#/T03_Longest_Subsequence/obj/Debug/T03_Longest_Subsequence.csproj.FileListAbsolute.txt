@@ -1,7 +1,0 @@
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\bin\Debug\T03_Longest_Subsequence.exe.config
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\bin\Debug\T03_Longest_Subsequence.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\bin\Debug\T03_Longest_Subsequence.pdb
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\obj\Debug\T03_Longest_Subsequence.csprojAssemblyReference.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\obj\Debug\T03_Longest_Subsequence.csproj.CoreCompileInputs.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\obj\Debug\T03_Longest_Subsequence.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T03_Longest_Subsequence\obj\Debug\T03_Longest_Subsequence.pdb

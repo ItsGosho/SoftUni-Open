@@ -1,7 +1,0 @@
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\bin\Debug\ReversedList.exe.config
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\bin\Debug\ReversedList.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\bin\Debug\ReversedList.pdb
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\obj\Debug\T06_Reversed_List.csprojAssemblyReference.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\obj\Debug\T06_Reversed_List.csproj.CoreCompileInputs.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\obj\Debug\ReversedList.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\ReversedList\obj\Debug\ReversedList.pdb

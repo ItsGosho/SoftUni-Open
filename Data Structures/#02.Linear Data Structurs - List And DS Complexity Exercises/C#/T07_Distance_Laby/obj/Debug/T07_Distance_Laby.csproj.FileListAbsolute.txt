@@ -1,7 +1,0 @@
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\bin\Debug\T07_Distance_Laby.exe.config
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\bin\Debug\T07_Distance_Laby.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\bin\Debug\T07_Distance_Laby.pdb
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\obj\Debug\T07_Distance_Laby.csprojAssemblyReference.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\obj\Debug\T07_Distance_Laby.csproj.CoreCompileInputs.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\obj\Debug\T07_Distance_Laby.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#02.Linear Data Structurs - List And DS Complexity Exercises\C#\T07_Distance_Laby\obj\Debug\T07_Distance_Laby.pdb
