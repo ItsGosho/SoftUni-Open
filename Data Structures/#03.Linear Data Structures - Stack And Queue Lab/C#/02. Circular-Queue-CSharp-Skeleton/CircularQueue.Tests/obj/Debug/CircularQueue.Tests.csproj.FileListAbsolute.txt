@@ -1,0 +1,10 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\bin\Debug\CircularQueue.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\bin\Debug\CircularQueue.Tests.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\bin\Debug\CircularQueue.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\bin\Debug\CircularQueue.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\obj\Debug\CircularQueue.Tests.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\obj\Debug\CircularQueue.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\obj\Debug\CircularQueue.Tests.csproj.CopyComplete
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\obj\Debug\CircularQueue.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#03.Linear Data Structures - Stack And Queue Lab\C#\02. Circular-Queue-CSharp-Skeleton\CircularQueue.Tests\obj\Debug\CircularQueue.Tests.pdb
