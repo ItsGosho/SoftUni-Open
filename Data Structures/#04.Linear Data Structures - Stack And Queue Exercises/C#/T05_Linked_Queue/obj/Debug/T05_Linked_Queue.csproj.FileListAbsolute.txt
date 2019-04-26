@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\bin\Debug\T05_Linked_Queue.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\bin\Debug\T05_Linked_Queue.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\bin\Debug\T05_Linked_Queue.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\obj\Debug\T05_Linked_Queue.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\obj\Debug\T05_Linked_Queue.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\obj\Debug\T05_Linked_Queue.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T05_Linked_Queue\obj\Debug\T05_Linked_Queue.pdb
