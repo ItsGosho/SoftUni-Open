@@ -1,0 +1,6 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T01_Reverse_Numbers_With_Stack\bin\Debug\T01_Reverse_Numbers_With_Stack.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T01_Reverse_Numbers_With_Stack\bin\Debug\T01_Reverse_Numbers_With_Stack.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T01_Reverse_Numbers_With_Stack\bin\Debug\T01_Reverse_Numbers_With_Stack.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T01_Reverse_Numbers_With_Stack\obj\Debug\T01_Reverse_Numbers_With_Stack.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T01_Reverse_Numbers_With_Stack\obj\Debug\T01_Reverse_Numbers_With_Stack.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T01_Reverse_Numbers_With_Stack\obj\Debug\T01_Reverse_Numbers_With_Stack.pdb

@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\bin\Debug\Stack And Queue Exercises.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\bin\Debug\Stack And Queue Exercises.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\bin\Debug\Stack And Queue Exercises.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\obj\Debug\Stack And Queue Exercises.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\obj\Debug\Stack And Queue Exercises.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\obj\Debug\Stack And Queue Exercises.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\Stack And Queue Exercises\obj\Debug\Stack And Queue Exercises.pdb

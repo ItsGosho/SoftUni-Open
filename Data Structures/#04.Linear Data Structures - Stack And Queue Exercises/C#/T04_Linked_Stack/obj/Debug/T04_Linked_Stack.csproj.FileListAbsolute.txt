@@ -1,0 +1,6 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T04_Linked_Stack\bin\Debug\T04_Linked_Stack.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T04_Linked_Stack\bin\Debug\T04_Linked_Stack.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T04_Linked_Stack\bin\Debug\T04_Linked_Stack.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T04_Linked_Stack\obj\Debug\T04_Linked_Stack.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T04_Linked_Stack\obj\Debug\T04_Linked_Stack.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T04_Linked_Stack\obj\Debug\T04_Linked_Stack.pdb
