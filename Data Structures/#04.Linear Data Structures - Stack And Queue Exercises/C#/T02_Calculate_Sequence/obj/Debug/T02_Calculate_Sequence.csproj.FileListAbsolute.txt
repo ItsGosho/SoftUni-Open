@@ -1,6 +1,0 @@
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T02_Calculate_Sequence\obj\Debug\T02_Calculate_Sequence.csproj.CoreCompileInputs.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T02_Calculate_Sequence\bin\Debug\T02_Calculate_Sequence.exe.config
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T02_Calculate_Sequence\bin\Debug\T02_Calculate_Sequence.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T02_Calculate_Sequence\bin\Debug\T02_Calculate_Sequence.pdb
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T02_Calculate_Sequence\obj\Debug\T02_Calculate_Sequence.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T02_Calculate_Sequence\obj\Debug\T02_Calculate_Sequence.pdb

@@ -1,7 +1,0 @@
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\bin\Debug\T03_Array_Based_Stack.exe.config
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\bin\Debug\T03_Array_Based_Stack.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\bin\Debug\T03_Array_Based_Stack.pdb
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\obj\Debug\T03_Array_Based_Stack.csprojAssemblyReference.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\obj\Debug\T03_Array_Based_Stack.csproj.CoreCompileInputs.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\obj\Debug\T03_Array_Based_Stack.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T03_Array_Based_Stack\obj\Debug\T03_Array_Based_Stack.pdb
