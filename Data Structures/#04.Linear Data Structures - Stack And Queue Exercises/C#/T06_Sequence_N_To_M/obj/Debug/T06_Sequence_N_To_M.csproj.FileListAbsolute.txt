@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\bin\Debug\T06_Sequence_N_To_M.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\bin\Debug\T06_Sequence_N_To_M.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\bin\Debug\T06_Sequence_N_To_M.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\obj\Debug\T06_Sequence_N_To_M.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\obj\Debug\T06_Sequence_N_To_M.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\obj\Debug\T06_Sequence_N_To_M.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#04.Linear Data Structures - Stack And Queue Exercises\C#\T06_Sequence_N_To_M\obj\Debug\T06_Sequence_N_To_M.pdb
