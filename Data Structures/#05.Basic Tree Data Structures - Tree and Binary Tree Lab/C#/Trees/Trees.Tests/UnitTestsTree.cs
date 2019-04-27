@@ -57,6 +57,7 @@ public class UnitTestsTree
 
         // Assert
         var expectedOutput = "7\n  19\n    1\n    12\n    31\n  21\n  14\n    23\n    6\n";
+
         output = output.Replace("\r\n", "\n");
         Assert.AreEqual(expectedOutput, output);
     }

@@ -14,19 +14,50 @@ public class Tree<T>
 
     public void Print(int indent = 0)
     {
-        throw new NotImplementedException();
+        this.Print(this, ++indent);
     }
+
+    private void Print(Tree<T> tree, int indent)
+    {
+        string res = new String(' ', indent) + tree.value;
+        if (indent == 1)
+        {
+            Console.Write(tree.value + "\n");
+        }
+        else
+        {
+            Console.Write(res + "\n");
+        }
+        indent *= 2;
+        foreach (var item in tree.trees)
+        {
+            this.Print(item, indent);
+        }
+    }
+
+
 
     public void Each(Action<T> action)
     {
-        throw new NotImplementedException();
+        this.Each(this,action);
+    }
+
+    private void Each(Tree<T> tree,Action<T> action)
+    {
+        action.Invoke(tree.value);
+        foreach (var item in tree.trees)
+        {
+            this.Each(item,action);
+        }
     }
 
     public IEnumerable<T> OrderDFS()
     {
         Stack<T> stack = new Stack<T>();
         this.DFS(this, stack);
-        return stack;
+        List<T> res = new List<T>(stack);
+        res.Reverse();
+        return res;
     }
 
     private void DFS(Tree<T> tree, Stack<T> stack)

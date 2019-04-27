@@ -15,7 +15,7 @@ public class PlayWithTrees
                     new Tree<int>(23),
                     new Tree<int>(6)));
 
-        tree.OrderBFS();
+        tree.Print();
 
         Console.WriteLine();
 
