@@ -1,7 +1,0 @@
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\bin\Debug\Trees.exe.config
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\bin\Debug\Trees.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\bin\Debug\Trees.pdb
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\obj\Debug\Trees.csprojAssemblyReference.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\obj\Debug\Trees.csproj.CoreCompileInputs.cache
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\obj\Debug\Trees.exe
-C:\Users\Gosho\Desktop\GitHub\Data-Structures\#05.Basic Tree Data Structures - Tree and Binary Tree Lab\C#\Trees\Trees\obj\Debug\Trees.pdb
