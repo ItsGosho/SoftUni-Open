@@ -1,0 +1,29 @@
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\bin\Debug\Trees.Tests.dll
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\bin\Debug\Trees.Tests.pdb
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\bin\Debug\Trees.exe
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\bin\Debug\Trees.pdb
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\obj\Debug\Trees.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\obj\Debug\Trees.Tests.dll
+C:\Users\Pesho\Desktop\DS02\Skeleton\Trees\Trees.Tests\obj\Debug\Trees.Tests.pdb
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\obj\Debug\Trees.Tests.csprojResolveAssemblyReference.cache
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\obj\Debug\Trees.Tests.dll
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\obj\Debug\Trees.Tests.pdb
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Trees.Tests.dll
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Trees.Tests.pdb
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Trees.exe
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Trees.pdb
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Trees.exe.config
+C:\Users\s_she\Documents\SVN\DataStructures\Data-Structures-May-2017\04. Data-Structures-Binary-Search-Trees\Trees\Trees.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\bin\Debug\Trees.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\bin\Debug\Trees.Tests.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\bin\Debug\Trees.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\bin\Debug\Trees.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\bin\Debug\Trees.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\obj\Debug\Trees.Tests.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\obj\Debug\Trees.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\obj\Debug\Trees.Tests.csproj.CopyComplete
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\obj\Debug\Trees.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#06.Binary Search Trees Lab\C#\Trees\Trees.Tests\obj\Debug\Trees.Tests.pdb
