@@ -8,12 +8,18 @@ public class Tree<T> {
     private List<Tree<T>> children;
 
     public Tree() {
+        this.children = new ArrayList<>();
+    }
 
+    public Tree(T value, Tree<T> father) {
+        this();
+        this.value = value;
+        this.father = father;
     }
 
     public Tree(T value, Tree<T>... children) {
+        this();
         this.value = value;
-        this.children = new ArrayList<>();
 
         for (Tree<T> child : children) {
             child.father = this;
@@ -22,20 +28,120 @@ public class Tree<T> {
     }
 
     public void attachChildren(T father, T value) {
-        //Ako nqma value-ta father-a stava root
-        //Posle shte napravq BFS za da namera father-a
-        //kato namerq fathera shete mu sloja Tree s novoto value
+
+        if (this.value == null) {
+            this.value = father;
+            this.children.add(new Tree<>(value, this));
+            return;
+        }
+
+        if (this.value == father) {
+            this.children.add(new Tree<>(value, this));
+            return;
+        }
+
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+        this.attachChildren(childToTraverse, father, value);
+    }
+
+    //BFS
+    private void attachChildren(Queue<Tree<T>> childToTraverse, T fatherValue, T newChildrenValue) {
+
+        while (childToTraverse.size() != 0) {
+            Tree<T> tree = childToTraverse.poll();
+
+            if (tree.value == fatherValue) {
+                tree.children.add(new Tree<>(newChildrenValue, tree));
+            }
+
+            childToTraverse.addAll(tree.children);
+        }
+
+    }
+
+    public Tree<T> getRootNode() {
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+        return this;
+    }
+
+    public List<Tree<T>> getLeafNodes() {
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+
+        List<Tree<T>> result = new ArrayList<>();
+
+        if (this.children.size() == 0) {
+            result.add(this);
+        }
+
+        while (childToTraverse.size() != 0) {
+            Tree<T> tree = childToTraverse.poll();
+
+            if (tree.children.size() == 0) {
+                result.add(tree);
+            }
+
+            childToTraverse.addAll(tree.children);
+        }
+
+        return result;
+    }
+
+    public List<Tree<T>> getMiddleNodes() {
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+
+        List<Tree<T>> result = new ArrayList<>();
+
+        if (this.children.size() != 0 && this.father != null) {
+            result.add(this);
+        }
+
+        while (childToTraverse.size() != 0) {
+            Tree<T> tree = childToTraverse.poll();
+
+            if (tree.children.size() != 0 && tree.father != null) {
+                result.add(tree);
+            }
+
+            childToTraverse.addAll(tree.children);
+        }
+
+        return result;
+    }
+
+    public Tree<T> getDeepestNode() {
+        Map<Tree<T>, Integer> result = new LinkedHashMap<>();
+
+        this.getNodesHeight(this, new Stack<>(), result, 0);
+
+        int deepestCount = result.values().stream().max(Integer::compareTo).orElse(null);
+        Tree<T> deepestNode = result.entrySet().stream().filter(x->x.getValue() == deepestCount).findFirst().map(Map.Entry::getKey).orElse(null);
+
+        return deepestNode;
+    }
+
+    private void getNodesHeight(Tree<T> tree, Stack<Tree<T>> stack, Map<Tree<T>, Integer> result, Integer deep) {
+
+        deep++;
+        for (Tree<T> child : tree.children) {
+
+            stack.push(child);
+            this.getNodesHeight(child, stack, result, deep);
+        }
+
+        if (!stack.isEmpty() && stack.peek().children.size() == 0) {
+            Tree<T> deepestTree = stack.pop();
+            result.put(deepestTree, deep);
+        }
     }
 
     // append output to builder
     public String print(int indent, StringBuilder builder) {
 
-        StringBuilder result = new StringBuilder();
-        result.append(repeat(indent, this.value, false));
-        this.printer(indent + 1, result, this);
-        result.append("\n");
+        builder.append(repeat(indent, this.value, false));
+        this.printer(indent + 1, builder, this);
+        builder.append("\n");
 
-        return result.toString();
+        return builder.toString();
     }
 
     private void printer(int indent, StringBuilder builder, Tree<T> tree) {
@@ -88,8 +194,7 @@ public class Tree<T> {
     }
 
     public Iterable<T> orderBFS() {
-        Queue<Tree<T>> childToTraverse = new ArrayDeque<>();
-        childToTraverse.addAll(this.children);
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
 
         return this.BFS(childToTraverse);
     }
@@ -108,4 +213,7 @@ public class Tree<T> {
         return result;
     }
 
+    public T getValue() {
+        return value;
+    }
 }
