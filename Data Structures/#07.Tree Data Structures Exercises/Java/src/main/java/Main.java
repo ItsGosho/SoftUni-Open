@@ -1,21 +1,28 @@
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
 
-        Tree<Integer> tree = createTreeFromInput();
+        Scanner scanner = new Scanner(System.in);
+        Tree<Integer> tree = createTreeFromInput(scanner);
+        int sum = Integer.parseInt(scanner.nextLine());
+        System.out.println(String.format("Subtrees of sum %d:", sum));
 
-        int result = tree.getDeepestNode().getValue();
-        System.out.println("Deepest node: "+result);
+        List<Tree<Integer>> test = tree.getAllSubTrees();
+
+        for (Tree<Integer> item : test) {
+            int sumOfTrees = item.getSumOfTrees();
+
+            if(sumOfTrees == sum){
+                System.out.println(String.join(" ",item.printPreOrder().stream().map(Object::toString).collect(Collectors.toList())));
+            }
+        }
+
     }
 
-    private static Tree<Integer> createTreeFromInput() {
+    private static Tree<Integer> createTreeFromInput(Scanner scanner) {
         Tree<Integer> tree = new Tree<>();
-        Scanner scanner = new Scanner(System.in);
         int operationsCount = Integer.parseInt(scanner.nextLine());
 
         for (int i = 0; i < operationsCount - 1; i++) {

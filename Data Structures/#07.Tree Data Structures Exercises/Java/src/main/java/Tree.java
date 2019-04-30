@@ -114,9 +114,21 @@ public class Tree<T> {
         this.getNodesHeight(this, new Stack<>(), result, 0);
 
         int deepestCount = result.values().stream().max(Integer::compareTo).orElse(null);
-        Tree<T> deepestNode = result.entrySet().stream().filter(x->x.getValue() == deepestCount).findFirst().map(Map.Entry::getKey).orElse(null);
+        Tree<T> deepestNode = result.entrySet().stream().filter(x -> x.getValue() == deepestCount).findFirst().map(Map.Entry::getKey).orElse(null);
 
         return deepestNode;
+    }
+
+    public Stack<Tree<T>> getLongestPath() {
+        Stack<Tree<T>> result = new Stack<>();
+
+        Tree<T> currentNode = this.getDeepestNode();
+        while (currentNode != null) {
+            result.add(currentNode);
+            currentNode = currentNode.father;
+        }
+
+        return result;
     }
 
     private void getNodesHeight(Tree<T> tree, Stack<Tree<T>> stack, Map<Tree<T>, Integer> result, Integer deep) {
@@ -132,6 +144,80 @@ public class Tree<T> {
             Tree<T> deepestTree = stack.pop();
             result.put(deepestTree, deep);
         }
+    }
+
+    public List<Tree<T>> getChildrensWithSumOfFathers(T sum) {
+        List<Tree<T>> result = new ArrayList<>();
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+
+        if (this.value == sum) {
+            result.add(this);
+        }
+
+        while (childToTraverse.size() != 0) {
+            Tree<T> tree = childToTraverse.poll();
+
+            if (tree.getSumOfFathers() == sum) {
+                result.add(tree);
+            }
+
+            childToTraverse.addAll(tree.children);
+        }
+
+
+        return result;
+    }
+
+    private Integer getSumOfFathers() {
+        Integer sum = (Integer) this.value;
+
+        Tree<T> current = this.father;
+        while (current != null) {
+            sum += (Integer) current.getValue();
+            current = current.father;
+        }
+
+        return sum;
+    }
+
+    public List<Tree<T>> getAllSubTrees() {
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+        List<Tree<T>> subTrees = new ArrayList<>();
+
+        if (this.children.size() != 0) {
+            subTrees.add(this);
+        }
+
+        while (childToTraverse.size() != 0) {
+            Tree<T> tree = childToTraverse.poll();
+
+            if (tree.children.size() != 0) {
+                subTrees.add(tree);
+            }
+
+            childToTraverse.addAll(tree.children);
+        }
+
+        return subTrees;
+    }
+
+    public void test() {
+        
+    }
+
+    public Integer getSumOfTrees() {
+        int sum = (int) this.value;
+
+        Queue<Tree<T>> childToTraverse = new ArrayDeque<>(this.children);
+
+        while (childToTraverse.size() != 0) {
+            Tree<T> children = childToTraverse.poll();
+            sum += (int) children.value;
+
+            childToTraverse.addAll(children.children);
+        }
+
+        return sum;
     }
 
     // append output to builder
@@ -213,7 +299,27 @@ public class Tree<T> {
         return result;
     }
 
+    public List<T> printPreOrder() {
+        List<T> result = new ArrayList<>();
+        result.add(this.value);
+        this.preOrder(this, result);
+
+        return result;
+    }
+
+    private void preOrder(Tree<T> tree, List<T> result) {
+
+        for (Tree<T> child : tree.children) {
+            result.add(child.value);
+            this.preOrder(child, result);
+        }
+    }
+
     public T getValue() {
         return value;
+    }
+
+    public Tree<T> getFather() {
+        return father;
     }
 }
