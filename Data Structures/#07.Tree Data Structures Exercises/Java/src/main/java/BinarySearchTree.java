@@ -1,9 +1,8 @@
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.function.Consumer;
 
 public class BinarySearchTree<T extends Comparable<T>> {
-    
+
     private Node root;
     private int nodesCount;
 
@@ -29,7 +28,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     public int getNodesCount() {
-        throw new UnsupportedOperationException();
+        return this.nodesCount;
     }
 
     public void insert(T value) {
@@ -165,27 +164,252 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     public void deleteMax() {
-        throw new UnsupportedOperationException();
+        if (this.root == null) {
+            throw new IllegalArgumentException("Tree is empty!");
+        }
+
+        if (this.root.right == null) {
+
+            if (this.root.left != null) {
+                this.root = this.root.left;
+                return;
+            }
+
+            this.root = null;
+            return;
+
+        }
+
+        Node fatherElement = this.root;
+        Node rightElement = this.root.right;
+
+        while (rightElement != null) {
+
+            if (rightElement.right == null) {
+                fatherElement.right = rightElement.left;
+                break;
+            }
+
+            fatherElement = rightElement;
+            rightElement = rightElement.right;
+
+        }
+        this.nodesCount--;
     }
 
     public T ceil(T element) {
-        throw new UnsupportedOperationException();
+
+        if(this.root == null){
+            return null;
+        }
+
+        Queue<Node> nodes = new ArrayDeque<>();
+        nodes.add(this.root);
+
+        Node currentHighest = null;
+        while (nodes.size() != 0) {
+            Node node = nodes.peek();
+
+            if (node.value.compareTo(element) >= 0) {
+
+                if (currentHighest == null) {
+                    currentHighest = node;
+                } else if (currentHighest.value.compareTo(node.value) >= 0) {
+                    currentHighest = node;
+                }
+            }
+
+            if (node.left != null)
+                nodes.add(node.left);
+
+            if (node.right != null)
+                nodes.add(node.right);
+
+            nodes.poll();
+        }
+
+        if (currentHighest == null)
+            return null;
+
+        return currentHighest.value;
     }
 
+    //BFS
     public T floor(T element) {
-        throw new UnsupportedOperationException();
+        Queue<Node> nodes = new ArrayDeque<>();
+        nodes.add(this.root);
+
+        Node currentSmallest = null;
+        while (nodes.size() != 0) {
+            Node node = nodes.peek();
+
+            if (node.value.compareTo(element) <= 0) {
+
+                if (currentSmallest == null) {
+                    currentSmallest = node;
+                } else if (currentSmallest.value.compareTo(node.value) <= 0) {
+                    currentSmallest = node;
+                }
+            }
+
+            if (node.left != null)
+                nodes.add(node.left);
+
+            if (node.right != null)
+                nodes.add(node.right);
+
+            nodes.poll();
+        }
+
+        if (currentSmallest == null)
+            return null;
+
+        return currentSmallest.value;
     }
 
     public void delete(T key) {
-        throw new UnsupportedOperationException();
+
+        if (this.search(key).root == null) {
+            return;
+        }
+
+        if (this.root.childrenCount == 1) {
+            this.root = null;
+            return;
+        }
+
+        if (this.root.value.equals(key)) {
+
+            if (this.root.left == null) {
+                this.root = this.root.right;
+                return;
+            }
+
+            if (this.root.right == null) {
+                this.root = this.root.left;
+                return;
+            }
+
+            Node newRoot = this.root.right;
+
+            Node edge = newRoot;
+            while (edge != null){
+                Node nextEdge = edge.left;
+
+                if (nextEdge == null) {
+                    edge.left = this.root.left;
+                    break;
+                }
+
+                edge = edge.left;
+            }
+
+            this.root = newRoot;
+            return;
+        }
+
+        this.delete(this.root, null, key, null);
+    }
+
+    private void delete(Node startNode, Node father, T element, String comingPosition) {
+
+        while (startNode != null) {
+
+            if (startNode.value.equals(element)) {
+                switch (comingPosition) {
+                    case "left":
+
+                        father.left = startNode.right;
+
+                        Node lastElement = father.left;
+
+                        if (lastElement == null)
+                            father.left = startNode.left;
+
+                        while (lastElement != null) {
+                            Node next = lastElement.left;
+                            if (next == null) {
+                                lastElement.left = startNode.left;
+                                break;
+                            }
+                            lastElement = lastElement.left;
+                        }
+                        break;
+
+                    case "right":
+                        father.right = startNode.left;
+
+                        Node lastRightElement = father.right;
+
+                        if (lastRightElement == null)
+                            father.right = startNode.right;
+
+                        while (lastRightElement != null) {
+                            Node next = lastRightElement.right;
+                            if (next == null) {
+                                lastRightElement.right = startNode.right;
+                                break;
+                            }
+                            lastRightElement = lastRightElement.right;
+                        }
+                        break;
+                }
+            }
+
+            this.delete(startNode.left, startNode, element, "left");
+            this.delete(startNode.right, startNode, element, "right");
+            return;
+        }
     }
 
     public int rank(T item) {
-        throw new UnsupportedOperationException();
+
+        List<Node> nodes = new ArrayList<>();
+        this.rank(this.root, item, nodes);
+
+        return nodes.size();
+    }
+
+    private void rank(Node node, T smallerThan, List<Node> nodes) {
+
+        while (node != null) {
+
+            if (node.value.compareTo(smallerThan) < 0) {
+                nodes.add(node);
+            }
+
+            if (node.value.compareTo(smallerThan) <= 0) {
+                this.rank(node.left, smallerThan, nodes);
+                this.rank(node.right, smallerThan, nodes);
+            } else {
+                this.rank(node.left, smallerThan, nodes);
+            }
+
+            break;
+        }
     }
 
     public T select(int n) {
-        throw new UnsupportedOperationException();
+        Map<T, Integer> map = new LinkedHashMap<>();
+        this.select(this.root, map);
+
+        return map.entrySet().stream().filter(x -> x.getValue() == n).findFirst().orElse(null).getKey();
+    }
+
+    private void select(Node node, Map<T, Integer> map) {
+
+        while (node != null) {
+            this.select(node.left, map);
+
+            List<Node> nodes = new ArrayList<>();
+            this.rank(this.root, node.value, nodes);
+
+            map.put(node.value, (nodes.size()));
+            //System.out.println(node.value + " -> " + (nodes.size() - 1));
+
+            this.select(node.right, map);
+            return;
+        }
     }
 
     class Node {
@@ -222,6 +446,14 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
         public void setRight(Node right) {
             this.right = right;
+        }
+
+        public int getChildrenCount() {
+            return childrenCount;
+        }
+
+        public void setChildrenCount(int childrenCount) {
+            this.childrenCount = childrenCount;
         }
 
         @Override
