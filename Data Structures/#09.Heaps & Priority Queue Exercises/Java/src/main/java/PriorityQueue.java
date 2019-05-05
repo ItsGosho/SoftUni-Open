@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinaryHeap<T extends Comparable<T>> {
+public class PriorityQueue<T extends Comparable<T>> {
 
     private List<T> heap;
     private int size;
 
-    public BinaryHeap() {
+    public PriorityQueue() {
         this.heap = new ArrayList<>();
         this.size = 0;
     }
@@ -15,21 +15,28 @@ public class BinaryHeap<T extends Comparable<T>> {
         return this.size;
     }
 
-    public void insert(T element) {
+    public void enqueue(T element) {
 
         this.heap.add(element);
 
         int parentIndex = ((this.heap.size() - 1) - 1) / 2;
-        this.heapifyUp(parentIndex);
+        this.heapifyUp(parentIndex,this.heap.size()-1);
 
         size++;
 
     }
 
+    public void decreaseKey(T element) {
+        int indexOfDecreased = heap.indexOf(element);
+        int parent = (indexOfDecreased - 1) / 2;
+        this.heapifyUp(parent,indexOfDecreased);
+        System.out.println();
+    }
+
     //MAX HEAP
-    private void heapifyUp(int parentIndex) {
+    private void heapifyUp(int parentIndex,int elementIndex) {
         T parentIndexElement = heap.get(parentIndex);
-        int currentIndex = heap.size() - 1;
+        int currentIndex = elementIndex;
         T currentElement = heap.get(currentIndex);
 
         while (parentIndexElement.compareTo(currentElement) > 0) {
@@ -116,7 +123,7 @@ public class BinaryHeap<T extends Comparable<T>> {
         return this.heap.get(0);
     }
 
-    public T pull() {
+    public T dequeue() {
 
         if (this.size == 0) {
             throw new IllegalArgumentException();
@@ -126,7 +133,7 @@ public class BinaryHeap<T extends Comparable<T>> {
         T element = this.heap.get(0);
 
         this.heap.set(0, this.heap.get(this.size - 1));
-        this.heap.remove(this.size -1);
+        this.heap.remove(this.size - 1);
 
         this.size--;
         if (this.size > 1) {

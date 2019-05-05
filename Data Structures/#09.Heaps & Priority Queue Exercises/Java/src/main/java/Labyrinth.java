@@ -8,7 +8,7 @@ public class Labyrinth {
     public static final String WALL_SYMBOL = "W";
     public static final String FINAL_POSITION_SYMBOL = "P";
 
-    private BinaryHeap<Cell> cells;
+    private PriorityQueue<Cell> cells;
 
     private String[][] labyrinth;
     private int startRow;
@@ -22,7 +22,7 @@ public class Labyrinth {
         this.startColumn = startColumn;
         this.finishRow = finishRow;
         this.finishColumn = finishColumn;
-        this.cells = new BinaryHeap<>();
+        this.cells = new PriorityQueue<>();
     }
 
     public void start() {
@@ -30,7 +30,7 @@ public class Labyrinth {
         this.insertInitialCells();
 
         while (this.cells.size() != 0) {
-            Cell cell = cells.pull();
+            Cell cell = cells.dequeue();
 
             if (this.labyrinth[cell.getRow()][cell.getColumn()].equals(FINAL_POSITION_SYMBOL)) {
                 this.printPath(cell);
@@ -40,25 +40,25 @@ public class Labyrinth {
             if (this.isCordinatesValid(cell.getRow() - 1, cell.getColumn())) {
                 Cell upCell = new Cell(cell.getGCost() + 1, cell.getRow() - 1, cell.getColumn(), finishRow, finishColumn, cell);
                 this.makeVisited(cell.getRow() - 1, cell.getColumn());
-                this.cells.insert(upCell);
+                this.cells.enqueue(upCell);
             }
 
             if (this.isCordinatesValid(cell.getRow() + 1, cell.getColumn())) {
                 Cell downCell = new Cell(cell.getGCost() + 1, cell.getRow() + 1, cell.getColumn(), finishRow, finishColumn, cell);
                 this.makeVisited(cell.getRow() + 1, cell.getColumn());
-                this.cells.insert(downCell);
+                this.cells.enqueue(downCell);
             }
 
             if (this.isCordinatesValid(cell.getRow(), cell.getColumn() - 1)) {
                 Cell leftCell = new Cell(cell.getGCost() + 1, cell.getRow(), cell.getColumn() - 1, finishRow, finishColumn, cell);
                 this.makeVisited(cell.getRow(), cell.getColumn() - 1);
-                this.cells.insert(leftCell);
+                this.cells.enqueue(leftCell);
             }
 
             if (this.isCordinatesValid(cell.getRow(), cell.getColumn() + 1)) {
                 Cell rightCell = new Cell(cell.getGCost() + 1, cell.getRow(), cell.getColumn() + 1, finishRow, finishColumn, cell);
                 this.makeVisited(cell.getRow(), cell.getColumn() + 1);
-                this.cells.insert(rightCell);
+                this.cells.enqueue(rightCell);
             }
         }
 
@@ -92,22 +92,22 @@ public class Labyrinth {
 
         if (this.isCordinatesValid(this.startRow - 1, this.startColumn)) {
             Cell upCell = new Cell(this.startRow - 1, this.startColumn, this.finishRow, this.finishColumn);
-            this.cells.insert(upCell);
+            this.cells.enqueue(upCell);
         }
 
         if (this.isCordinatesValid(this.startRow + 1, this.startColumn)) {
             Cell downCell = new Cell(this.startRow + 1, this.startColumn, this.finishRow, this.finishColumn);
-            this.cells.insert(downCell);
+            this.cells.enqueue(downCell);
         }
 
         if (this.isCordinatesValid(this.startRow, this.startColumn - 1)) {
             Cell leftCell = new Cell(this.startRow, this.startColumn - 1, this.finishRow, this.finishColumn);
-            this.cells.insert(leftCell);
+            this.cells.enqueue(leftCell);
         }
 
         if (this.isCordinatesValid(this.startRow, this.startColumn + 1)) {
             Cell rightCell = new Cell(this.startRow, this.startColumn + 1, this.finishRow, this.finishColumn);
-            this.cells.insert(rightCell);
+            this.cells.enqueue(rightCell);
         }
 
     }
