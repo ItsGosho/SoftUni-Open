@@ -38,7 +38,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 
                 if (node.right == null) {
                     node.right = new Node(value, RED);
-                    this.rotation(node.right);
+                    this.rotation(node);
                     return;
                 }
 
@@ -50,7 +50,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 
                 if (node.left == null) {
                     node.left = new Node(value, RED);
-                    this.rotation(node.left);
+                    this.rotation(node);
                     return;
                 }
 
@@ -65,6 +65,37 @@ public class RedBlackTree<T extends Comparable<T>> {
     //Is and what rotation is needed:
     private void rotation(Node node) {
 
+        while (node != null) {
+            boolean isChanged = false;
+
+            /*If the node`s left and right child colors equal to Red and this will repeat until there isn't*/
+            while (true){
+                boolean isColored = false;
+                if (this.isFlipColorRequired(node)) {
+                    Node newNode = this.flipColor(node);
+                    node = this.getFather(newNode.value);
+                    isColored = true;
+                }
+
+                if(!isColored) break;;
+                isChanged = true;
+            }
+
+            /*If the node`s right child red*/
+            if (this.isLeftRotationRequired(node)) {
+                Node newNode = this.leftRotation(node);
+                node = this.getFather(newNode.value);
+                isChanged = true;
+            }
+
+            /*If two consecutive nodes are red - node & node.left*/
+            if (this.isRightRotationRequired(node)) {
+                node = this.rightRotation(this.getFather(node.value));
+                isChanged = true;
+            }
+
+            if (!isChanged) break;
+        }
 
     }
 
@@ -73,10 +104,12 @@ public class RedBlackTree<T extends Comparable<T>> {
 
         node.right = temp.left;
         node.color = RED;
-        temp.left = node;
-        temp.color = BLACK;
+        node.left = new Node(node);
+        node.color = BLACK;
+        node.value = temp.value;
+        node.right = temp.right;
 
-        return temp;
+        return node;
     }
 
     private Node rightRotation(Node node) {
@@ -84,10 +117,48 @@ public class RedBlackTree<T extends Comparable<T>> {
 
         node.left = temp.right;
         node.color = RED;
-        temp.right = node;
+        node.right = new Node(node);
         node.color = BLACK;
+        node.value = temp.value;
+        node.left = temp.left;
 
-        return temp;
+        return node;
+    }
+
+    private Node flipColor(Node node) {
+        node.left.color = BLACK;
+        node.right.color = BLACK;
+
+        if (!this.root.equals(node)) node.color = RED;
+
+        return node;
+    }
+
+    private boolean isRightRotationRequired(Node node) {
+        if (node == null) return false;
+        if (!this.isRed(node)) return false;
+        if (node.left == null) return false;
+        if (!this.isRed(node.left)) return false;
+
+        Node leftNode = node.left;
+
+        return this.isRed(node) && this.isRed(leftNode);
+    }
+
+    private boolean isLeftRotationRequired(Node node) {
+
+        if (node == null) return false;
+        if (node.right == null) return false;
+
+        return this.isRed(node.right);
+    }
+
+    private boolean isFlipColorRequired(Node node) {
+
+        if (node == null) return false;
+        if (node.left == null || node.right == null) return false;
+
+        return this.isRed(node.left) && this.isRed(node.right);
     }
 
     private boolean isSmallerThan(T value1, T value2) {
@@ -114,7 +185,9 @@ public class RedBlackTree<T extends Comparable<T>> {
     }
 
     public RedBlackTree<T> search(T item) {
+
         Node current = this.root;
+
         while (current != null) {
             if (item.compareTo(current.value) < 0) {
                 current = current.left;
@@ -126,6 +199,27 @@ public class RedBlackTree<T extends Comparable<T>> {
         }
 
         return new RedBlackTree<>(current);
+    }
+
+    public Node getFather(T item) {
+
+        Node father = null;
+        Node current = this.root;
+
+        while (current != null) {
+
+            if (item.compareTo(current.value) < 0) {
+                father = current;
+                current = current.left;
+            } else if (item.compareTo(current.value) > 0) {
+                father = current;
+                current = current.right;
+            } else {
+                break;
+            }
+        }
+
+        return father;
     }
 
     public void eachInOrder(Consumer<T> consumer) {
@@ -180,6 +274,14 @@ public class RedBlackTree<T extends Comparable<T>> {
             this.value = value;
             this.childrenCount = 1;
             this.color = color;
+        }
+
+        public Node(Node node) {
+            this.value = node.value;
+            this.left = node.left;
+            this.right = node.right;
+            this.color = node.color;
+            this.childrenCount = node.childrenCount;
         }
 
         public T getValue() {
