@@ -177,7 +177,6 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable
             throw new InvalidOperationException();
         }
 
-        bool isDeleted = false;
         Stack<Node> path = new Stack<Node>();
         Queue<Node> nodes = new Queue<Node>();
         nodes.Enqueue(this.root);
@@ -191,7 +190,6 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable
             {
                 if (node.Value.Equals(element))
                 {
-                    isDeleted = true;
                     if (node.Right != null)
                     {
                         Node temp = node.Left;
@@ -221,14 +219,14 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable
             nodes.Dequeue();
         }
 
-        if (!isDeleted)
-        {
-            throw new InvalidOperationException();
-        }
-
         while (path.Count != 0)
         {
-            path.Pop().updateCount();
+            if (path.Peek() == null)
+                path.Pop();
+
+            if (path.Peek() != null)
+                path.Pop().updateCount();
+
         }
     }
 
@@ -313,6 +311,12 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable
 
     public T Select(int rank)
     {
+
+        if (this.root == null)
+        {
+            throw new InvalidOperationException();
+        }
+
         Queue<Node> nodes = new Queue<Node>();
         nodes.Enqueue(this.root);
 
@@ -341,12 +345,101 @@ public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable
 
     public T Ceiling(T element)
     {
-        throw new NotImplementedException();
+
+        if (this.root == null)
+        {
+            throw new InvalidOperationException();
+        }
+
+        Queue<Node> nodes = new Queue<Node>();
+        nodes.Enqueue(this.root);
+
+        T current = this.root.Value;
+        while (nodes.Count != 0)
+        {
+            Node node = nodes.Peek();
+
+            if (node != null)
+            {
+
+                if (current.CompareTo(element) < 0)
+                {
+                    current = node.Value;
+                }
+
+                if (node.Value.CompareTo(current) < 0 && node.Value.CompareTo(element) > 0)
+                {
+                    current = node.Value;
+                }
+
+                if (node.Value.CompareTo(element) < 0)
+                {
+                    nodes.Enqueue(node.Right);
+                }
+                else if (node.Value.CompareTo(element) > 0)
+                {
+                    nodes.Enqueue(node.Left);
+                }
+                else
+                {
+                    if (node.Right != null)
+                    {
+                        current = node.Right.Value;
+                    }
+                    break;
+                }
+            }
+            nodes.Dequeue();
+        }
+
+        return current;
     }
 
     public T Floor(T element)
     {
-        throw new NotImplementedException();
+
+        if (this.root == null)
+        {
+            throw new InvalidOperationException();
+        }
+
+        Queue<Node> nodes = new Queue<Node>();
+        nodes.Enqueue(this.root);
+
+        T current = default(T);
+        while (nodes.Count != 0)
+        {
+            Node node = nodes.Peek();
+
+            if (node != null)
+            {
+
+                if (node.Value.CompareTo(current) > 0 && node.Value.CompareTo(element) < 0 && node.Value.CompareTo(current) > 0)
+                {
+                    current = node.Value;
+                }
+
+                if (node.Value.CompareTo(element) < 0)
+                {
+                    nodes.Enqueue(node.Right);
+                }
+                else if (node.Value.CompareTo(element) >= 0)
+                {
+                    nodes.Enqueue(node.Left);
+                }
+                else
+                {
+                    if (node.Right != null)
+                    {
+                        current = node.Right.Value;
+                    }
+                    break;
+                }
+            }
+            nodes.Dequeue();
+        }
+
+        return current;
     }
 
     private class Node
