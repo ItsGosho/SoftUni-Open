@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\bin\Debug\BinarySearchTree.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\bin\Debug\BinarySearchTree.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\bin\Debug\BinarySearchTree.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\obj\Debug\BinarySearchTree.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\obj\Debug\BinarySearchTree.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\obj\Debug\BinarySearchTree.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#07.Tree Data Structures Exercises\C#\BinarySearchTree\obj\Debug\BinarySearchTree.pdb
