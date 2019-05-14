@@ -1,0 +1,6 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#08.Heaps & Priority Queue Lab\C#\BinaryHeap\bin\Debug\BinaryHeap.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#08.Heaps & Priority Queue Lab\C#\BinaryHeap\bin\Debug\BinaryHeap.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#08.Heaps & Priority Queue Lab\C#\BinaryHeap\obj\Debug\BinaryHeap.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#08.Heaps & Priority Queue Lab\C#\BinaryHeap\obj\Debug\BinaryHeap.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#08.Heaps & Priority Queue Lab\C#\BinaryHeap\obj\Debug\BinaryHeap.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#08.Heaps & Priority Queue Lab\C#\BinaryHeap\obj\Debug\BinaryHeap.pdb

@@ -13,6 +13,8 @@ public class HeapExample
         heap.Insert(12);
         heap.Insert(-4);
 
+        Console.WriteLine(heap.Peek());
+
         Console.WriteLine("Heap elements (max to min):");
         while (heap.Count > 0)
         {
