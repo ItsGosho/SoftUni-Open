@@ -23,6 +23,8 @@ public class HeapExample
         //}
 
         int[] test = new int[] { 3, 10, 13, -4, 40, 15, 7, 8 };
+        //int[] test = new int[] { 2, 4, 1, 3, 5 };
+        // int[] test = new int[] { 3, 10, 13, -4, 40, 15, 7, 8 };
         Heap<int>.Sort(test);
         Console.WriteLine();
     }
