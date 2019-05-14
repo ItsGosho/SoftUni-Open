@@ -83,7 +83,7 @@ public class BinaryHeap<T> where T : IComparable<T>
         {
 
             int leftChildIndex = (2 * elementIndex) + 1;
-            int rightChildIndex = (2 * elementIndex) + 1;
+            int rightChildIndex = (2 * elementIndex) + 2;
 
             if (leftChildIndex > this.heap.Count-1 || rightChildIndex > this.heap.Count-1) break;
 
@@ -101,7 +101,7 @@ public class BinaryHeap<T> where T : IComparable<T>
                 this.Swap(elementIndex, (2 * elementIndex) + 1);
                 elementIndex = (2 * elementIndex) + 1;
             }
-            else if (leftChild.CompareTo(element) < 0)
+            else if (rightChild.CompareTo(element) < 0)
             {
                 this.Swap(elementIndex, (2 * elementIndex) + 2);
                 elementIndex = (2 * elementIndex) + 2;
