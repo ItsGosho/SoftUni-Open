@@ -16,94 +16,35 @@ public static class Heap<T> where T : IComparable<T>
             Swap(0, i, arr);
             HeapifyDown(0, arr, i);
         }
-
-        Swap(0, 1, arr);
         Console.WriteLine();
     }
 
     private static void HeapifyDown(int elementIndex, T[] heap, int border)
     {
 
-        while (true)
+        while (elementIndex < border / 2)
         {
-            bool change = false;
-            int leftChildIndex = (2 * elementIndex) + 1;
-            int rightChildIndex = (2 * elementIndex) + 2;
-
             T element = heap[elementIndex];
+            int child = 2 * elementIndex + 1;
 
-            if (!IsHeapifyDownPossibleRoute(element, leftChildIndex,rightChildIndex,heap))
+            if (child + 1 < border && IsLess(heap,child,child + 1))
+            {
+                child++;
+            }
+
+            if (IsLess(heap, child, elementIndex))
             {
                 break;
             }
 
-            if (IsHeapifyDownLeft(leftChildIndex,rightChildIndex,heap,border))
-            {
-                change = HeapifyDownLeft(elementIndex,leftChildIndex,heap);
-            }
-            else if (IsHeapifyDownRight(leftChildIndex,rightChildIndex,heap,border))
-            {
-                change = HeapifyDownLeft(elementIndex, rightChildIndex, heap);
-            }
-
-            if (!change)
-            {
-                break;
-            }
+            Swap(elementIndex,child,heap);
+            elementIndex = child;
         }
     }
 
-    private static bool IsHeapifyDownPossibleRoute(T element, int leftChildIndex, int rightChildIndex,T[] heap)
+    private static bool IsLess(T[] heap, int element1Index, int element2Index)
     {
-        T leftChild = heap[leftChildIndex];
-        T rightChild = heap[rightChildIndex];
-
-        if (element.CompareTo(rightChild) >= 0 && element.CompareTo(leftChild) >= 0)
-        {
-            return false;
-        }
-
-        return true;
-    }
-
-    private static bool IsHeapifyDownRight(int leftChildIndex, int rightChildIndex, T[] heap, int border)
-    {
-        T leftChild = heap[leftChildIndex];
-        T rightChild = heap[rightChildIndex];
-
-        if (leftChild.CompareTo(rightChild) < 0 && rightChildIndex < border)
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    private static bool IsHeapifyDownLeft(int leftChildIndex,int rightChildIndex,T[] heap,int border)
-    {
-        T leftChild = heap[leftChildIndex];
-        T rightChild = heap[rightChildIndex];
-
-        if (leftChild.CompareTo(rightChild) >= 0 && leftChildIndex < border)
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    private static bool HeapifyDownLeft(int elementIndex,int leftChildIndex,T[] heap)
-    {
-        Swap(elementIndex, leftChildIndex, heap);
-        elementIndex = leftChildIndex;
-        return true;
-    }
-
-    private static bool HeapifyDownRight(int elementIndex, int rightChildIndex, T[] heap)
-    {
-        Swap(elementIndex, rightChildIndex, heap);
-        elementIndex = rightChildIndex;
-        return true;
+        return heap[element1Index].CompareTo(heap[element2Index]) < 0;
     }
 
     private static void HeapifyUp(int elementIndex, T[] heap)
