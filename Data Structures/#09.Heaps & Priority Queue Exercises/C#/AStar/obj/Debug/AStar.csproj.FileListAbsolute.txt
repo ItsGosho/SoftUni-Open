@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\bin\Debug\AStar.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\bin\Debug\AStar.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\bin\Debug\AStar.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\obj\Debug\AStar.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\obj\Debug\AStar.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\obj\Debug\AStar.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar\obj\Debug\AStar.pdb

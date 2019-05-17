@@ -1,0 +1,11 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\bin\Debug\AStar.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\bin\Debug\AStar.Tests.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\bin\Debug\AStar.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\bin\Debug\AStar.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\bin\Debug\AStar.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\obj\Debug\AStar.Tests.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\obj\Debug\AStar.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\obj\Debug\AStar.Tests.csproj.CopyComplete
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\obj\Debug\AStar.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#09.Heaps & Priority Queue Exercises\C#\AStar.Tests\obj\Debug\AStar.Tests.pdb
