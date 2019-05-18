@@ -1,0 +1,10 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\bin\Debug\Hierarchy.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\bin\Debug\Hierarchy.Tests.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\bin\Debug\Hierarchy.Core.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\bin\Debug\Hierarchy.Core.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\bin\Debug\Hierarchy.Core.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\obj\Debug\Hierarchy.Tests.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\obj\Debug\Hierarchy.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\obj\Debug\Hierarchy.Tests.csproj.CopyComplete
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\obj\Debug\Hierarchy.Tests.dll
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#11.B-Trees & Red-Black Trees Exercises\C#\Hierarchy.Tests\obj\Debug\Hierarchy.Tests.pdb
