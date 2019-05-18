@@ -1,0 +1,7 @@
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\bin\Debug\RedBlackTree.exe.config
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\bin\Debug\RedBlackTree.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\bin\Debug\RedBlackTree.pdb
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\obj\Debug\RedBlackTree.csprojAssemblyReference.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\obj\Debug\RedBlackTree.csproj.CoreCompileInputs.cache
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\obj\Debug\RedBlackTree.exe
+C:\Users\Gosho\Desktop\GitHub\Data-Structures\#10.B-Trees & Red-Black Trees Lab\C#\RedBlackTree\obj\Debug\RedBlackTree.pdb
