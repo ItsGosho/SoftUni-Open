@@ -51,7 +51,6 @@ public class AVL<T extends Comparable<T>> {
             path.add(currentNode);
         }
 
-        System.out.println();
         while (path.size() != 0) {
             Node<T> node = path.pop();
             node.height++;
@@ -63,8 +62,6 @@ public class AVL<T extends Comparable<T>> {
             this.update(node.right);
             this.update(node);
         }
-
-        System.out.println();
     }
 
     public void eachInOrder(Consumer<T> consumer) {
@@ -152,24 +149,109 @@ public class AVL<T extends Comparable<T>> {
         }
     }
 
-
     public void delete(T element) {
+        this.delete(this.root, element);
     }
 
-    private Node<T> findMax(Node<T> currentNode) {
+    public void delete(Node<T> currentNode, T element) {
+        Node<T> currentNodeFather = null;
+        Stack<Node<T>> path = new Stack<>();
+        path.add(currentNode);
+        while (true) {
+            int cmp = element.compareTo(currentNode.value);
+
+            if (cmp == 0) {
+                Node<T> max = this.findLeftMaxAndRemoveIt(currentNode);
+
+                if (max == null) {
+                    this.removeChild(currentNodeFather, currentNode);
+                    break;
+                }
+
+                //if there is left max we need to
+                currentNode.value = max.value;
+                break;
+            }
+
+            if (cmp < 0) {
+
+                if (currentNode.left == null) {
+                    break;
+                }
+
+                currentNodeFather = currentNode;
+                currentNode = currentNode.left;
+            } else if (cmp > 0) {
+
+                if (currentNode.right == null) {
+                    break;
+                }
+
+                currentNodeFather = currentNode;
+                currentNode = currentNode.right;
+            }
+            path.add(currentNode);
+        }
+
+        while (path.size() != 0) {
+            Node<T> node = path.pop();
+            node.updateBalanceFactor();
+            this.rotate(node);
+
+
+            this.update(node.left);
+            this.update(node.right);
+            this.update(node);
+            System.out.println();
+        }
+    }
+
+    private Node<T> findLeftMaxAndRemoveIt(Node<T> currentNode) {
+        Node<T> father = currentNode;
         Node<T> current = currentNode.left;
 
         if (current != null && current.right != null) {
-            current = currentNode.right;
+            father = current;
+            current = current.right;
         } else {
+            this.removeChild(father, current);
             return current;
         }
 
+        this.removeChild(father, current);
         return current;
     }
 
-    public void deleteMin() {
+    private void removeChild(Node<T> father, Node<T> node) {
+        if (father.left == null) {
+            father.right = null;
+        } else if (father.right == null) {
+            father.left = null;
+        } else if (father.right.equals(node)) {
+            father.right = node.left;
+        } else {
+            father.left = null;
+        }
+    }
 
+    public void deleteMin() {
+        Node<T> min = this.findMin();
+
+        this.delete(min.value);
+    }
+
+    private Node<T> findMin() {
+        Node current = this.root;
+
+        while (true) {
+            if (current.left != null) {
+                current = current.left;
+            }else{
+                break;
+            }
+        }
+
+        return current;
     }
 
 }
