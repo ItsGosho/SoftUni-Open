@@ -14,7 +14,22 @@ public class IntervalTree {
     }
 
     public Interval searchAny(double start, double end) {
-        throw new UnsupportedOperationException();
+
+        Node node = this.root;
+        while (node != null && !node.interval.intersects(start,end)) {
+
+            if (node.left != null && node.left.max > start) {
+                node = node.left;
+            } else {
+                node = node.right;
+            }
+
+        }
+
+        if(node == null)
+            return null;
+
+        return node.interval;
     }
 
     public Iterable<Interval> searchAll(double start, double end) {
@@ -27,7 +42,7 @@ public class IntervalTree {
         if (node.left != null && node.left.max > start) {
             this.searchAll(node.left, start, end, result);
         }
-        
+
         if (node.interval.intersects(start, end)) {
             result.add(node.interval);
         }
