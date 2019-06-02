@@ -10,5 +10,7 @@ public class Main {
         tree.insert(new Point2D(8, 8));
         tree.insert(new Point2D(8, 9));
 
+        System.out.println(tree.contains(new Point2D(5, 5)));
+
     }
 }

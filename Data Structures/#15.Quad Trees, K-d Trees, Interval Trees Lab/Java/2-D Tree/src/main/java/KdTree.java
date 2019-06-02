@@ -46,7 +46,40 @@ public class KdTree {
 
 
     public boolean contains(Point2D point) {
-        throw new UnsupportedOperationException();
+        return this.isPresent(this.root, 0, point, false);
+    }
+
+    private boolean isPresent(Node current, int depth, Point2D point2D, boolean result) {
+
+        if(current == null){
+            return result;
+        }
+
+        if (current.getPoint2D().equals(point2D)) {
+            result = true;
+            return result;
+        }
+
+        if (depth % 2 == 0) {
+            //compare by X
+
+            if (point2D.getX() < current.getPoint2D().getX()) {
+                return this.isPresent(current.getLeft(), ++depth, point2D,result);
+            } else {
+                return this.isPresent(current.getRight(), ++depth, point2D,result);
+            }
+
+        } else if (depth % 2 == 1) {
+            //compare by Y
+
+            if (point2D.getY() < current.getPoint2D().getY()) {
+                return this.isPresent(current.getLeft(), ++depth, point2D,result);
+            } else {
+                return this.isPresent(current.getRight(), ++depth, point2D,result);
+            }
+        }
+
+        return result;
     }
 
     public void eachInOrder(Consumer<Point2D> consumer) {
