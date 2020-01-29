@@ -1,5 +1,7 @@
 package itsgosho;
 
+import org.apache.commons.lang3.time.StopWatch;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,16 @@ public class T01_Merge_Sort {
             add(40);
         }};
 
-        List<Integer> input = inputSecond;
+        List<Double> inputThird1 = new ArrayList<>();
+        List<Double> inputThird2 = new ArrayList<>();
+
+        for (int i = 0; i < 10 * 100000; i++) {
+            inputThird1.add(Math.random());
+            inputThird2.add(Math.random());
+        }
+
+
+        List<Double> input = inputThird1;
 
         int startSubstr = 0;
         int endSubstr = 1;
@@ -88,6 +99,7 @@ public class T01_Merge_Sort {
         //Which will result in indexes as n - 1
         int scaling = 1;
 
+        StopWatch stopWatch = StopWatch.createStarted();
         while (true) {
             scaling *= 2;
 
@@ -97,19 +109,19 @@ public class T01_Merge_Sort {
             int rightStart = leftEnd + 1;
             int rightEnd = (scaling - 1) < input.size() ? scaling - 1 : input.size() - 1;
 
-            if(leftEnd > input.size() - 1){
+            if (leftEnd > input.size() - 1) {
                 break;
             }
 
             while (rightEnd < input.size()) {
                 /*TODO: change with reference*/
-                List<Integer> leftElements = input.subList(leftStart, leftEnd + 1);
-                List<Integer> rightElements = input.subList(rightStart, rightEnd + 1);
+                List<Double> leftElements = input.subList(leftStart, leftEnd + 1);
+                List<Double> rightElements = input.subList(rightStart, rightEnd + 1);
 
-                List<Integer> result = mergeNonReference(leftElements, rightElements);
+                List<Double> result = mergeNonReference(leftElements, rightElements);
 
                 for (int i = 0; i <= rightEnd - leftStart; i++) {
-                    Integer elementToReplace = result.get(i);
+                    Double elementToReplace = result.get(i);
                     input.set(leftStart + i, elementToReplace);
                 }
 
@@ -124,21 +136,28 @@ public class T01_Merge_Sort {
             }
         }
 
-        System.out.println();
+        stopWatch.stop();
+        System.out.println(stopWatch.toString());
+
+        stopWatch.reset();
+        stopWatch.start();
+        inputThird2.sort((x1, x2) -> x2.compareTo(x1));
+        stopWatch.stop();
+        System.out.println(stopWatch.toString());
 
         /*TODO: the array ,which will be traversed after the merge will be replaced with the result of the merge*/
     }
 
 
-    public static List<Integer> mergeNonReference(List<Integer> left, List<Integer> right) {
-        List<Integer> result = new ArrayList<>();
+    public static List<Double> mergeNonReference(List<Double> left, List<Double> right) {
+        List<Double> result = new ArrayList<>();
 
         int leftPosition = 0;
         int rightPosition = 0;
 
         while (leftPosition < left.size() && rightPosition < right.size()) {
-            Integer leftElement = left.get(leftPosition);
-            Integer rightElement = right.get(rightPosition);
+            Double leftElement = left.get(leftPosition);
+            Double rightElement = right.get(rightPosition);
 
             if (leftElement.compareTo(rightElement) <= 0) {
                 result.add(leftElement);
@@ -151,12 +170,12 @@ public class T01_Merge_Sort {
 
         if (leftPosition < left.size()) {
             for (int i = leftPosition; i < left.size(); i++) {
-                Integer leftElement = left.get(i);
+                Double leftElement = left.get(i);
                 result.add(leftElement);
             }
         } else if (rightPosition < right.size()) {
             for (int i = rightPosition; i < right.size(); i++) {
-                Integer rightElement = right.get(i);
+                Double rightElement = right.get(i);
                 result.add(rightElement);
             }
         }
