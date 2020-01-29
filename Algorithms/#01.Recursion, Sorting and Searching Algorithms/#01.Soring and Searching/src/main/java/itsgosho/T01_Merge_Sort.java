@@ -7,6 +7,7 @@ public class T01_Merge_Sort {
 
     public static void main(String[] args) {
         List<Integer> inputFirst = new ArrayList<Integer>() {{
+            add(6);
             add(5);
             add(4);
             add(3);
@@ -28,37 +29,95 @@ public class T01_Merge_Sort {
             add(11);
         }};
 
-        List<Integer> input = inputFirst;
+        List<Integer> input = inputSecond;
 
-        int subtractFirstIndex = 0;
-        int subtractSecondIndex = 1;
+        int startSubstr = 0;
+        int endSubstr = 1;
 
-        while (true) {
+        /*FIRST TRY:* FAILED DUE TO WRONG GROUPING/
+        /*                              0 1 2 3 4 5 6 7 8 9 10
+                                        -----------------------
+         * I. 0 to 0 with 1 to 1 ->     9 12 1 2 4 3 8 6 7 5 11
+         * II. 2 to 2 with 3 to 3 ->    9 12 1 2 4 3 8 6 7 5 11
+         * III. 4 to 4 with 5 to 5 ->   9 12 1 2 3 4 8 6 7 5 11
+         * IV. 6 to 6 with 7 to 7 ->    9 12 1 2 3 4 6 8 7 5 11
+         * V. 8 to 8 with 9 to 9 ->     9 12 1 2 3 4 6 8 5 7 11
+         * VI. 10 to 10 with NOTHING -> 9 12 1 2 3 4 6 8 5 7 11
+         * -------------------------------------------------------
+         * I. 0 to 1 with 2 to 3 ->   1 2 9 12 3 4 6 8 5 7 11
+         * II. 4 to 5 with 6 to 7 ->   1 2 9 12 3 4 6 8 5 7 11
+         * III. 8 to 9 with 10 to 11 -> 1 2 9 12 3 4 6 8 5 7 11
+         * -------------------------------------------------------
+         * I. 0 to 2 with 3 to 5 ->  1 2 3 4 9 12 6 8 5 7 11
+         * II. 6 to 8 with 9 to 11 -> 1 2 3 4 9 12 6 8 5 7 11
+         * */
 
-            List<Integer> firstGroupElements = input.subList(subtractFirstIndex, subtractSecondIndex);
-            List<Integer> secondGroupElements = input.subList(subtractFirstIndex, subtractSecondIndex);
+        /*
+         * SECOND TRY: WORKING!
+         * *INITIAL TWO-TWO SORT*
+         *                                9 12 1 2 3 4 6 8 5 7 11
+         * I. 0 to 1 with 2 to 3 ->       1 2 9 12 3 4 6 8 5 7 11
+         * II. 4 to 5 with 6 to 7 ->      1 2 9 12 3 4 6 8 5 7 11
+         * III. 8 to 9 with 10 to 11 ->   1 2 9 12 3 4 6 8 5 7 11
+         * ------------------------------------------------------
+         * I. 0 to 3 with 4 to 7 ->      1 2 3 4 6 8 9 12 5 7 11
+         * II. 8 to 11 with NOTHING ->     1 2 3 4 6 8 9 12 5 7 11
+         * ------------------------------------------------------
+         * I. 0 to 7 with 8 to 11 ->     1 2 3 4 5 6 7 8 9 11 12
+         * */
 
-            subtractFirstIndex += 2;
-            subtractSecondIndex += 2;
-            break;
-        }
+        /*THIRD TRY: WORKING*/
+        /*                              0 1 2 3 4 5 6 7 8 9 10
+                                        -----------------------
+         * I. 0 to 0 with 1 to 1 ->     9 12 1 2 4 3 8 6 7 5 11
+         * II. 2 to 2 with 3 to 3 ->    9 12 1 2 4 3 8 6 7 5 11
+         * III. 4 to 4 with 5 to 5 ->   9 12 1 2 3 4 8 6 7 5 11
+         * IV. 6 to 6 with 7 to 7 ->    9 12 1 2 3 4 6 8 7 5 11
+         * V. 8 to 8 with 9 to 9 ->     9 12 1 2 3 4 6 8 5 7 11
+         * VI. 10 to 10 with NOTHING -> 9 12 1 2 3 4 6 8 5 7 11
+         * -------------------------------------------------------
+         * I. 0 to 1 with 2 to 3 ->   1 2 9 12 3 4 6 8 5 7 11
+         * II. 4 to 5 with 6 to 7 ->   1 2 9 12 3 4 6 8 5 7 11
+         * III. 8 to 9 with 10 to 11 -> 1 2 9 12 3 4 6 8 5 7 11
+         * -------------------------------------------------------
+         * I. 0 to 3 with 4 to 7 ->  1 2 3 4 6 8 9 12 5 7 11
+         * II. 8 to 9 with NOTHING->  1 2 3 4 6 8 9 12 5 7 11
+         * -------------------------------------------------------
+         * I. 0 to 7 with 8 to 9 ->  1 2 3 4 5 6 7 8 9 11 12
+         * */
 
-        List<Integer> test = merge(new ArrayList<Integer>() {{
-            add(1);
-        }}, new ArrayList<Integer>() {{
-            add(2);
-            add(3);
-        }});
+
+        int firstIndex = 0;
+        int secondIndex = 1;
+
+        do {
+            if (secondIndex < input.size()) {
+                Integer firstElement = input.get(firstIndex);
+                Integer secondElement = input.get(secondIndex);
+
+                if (firstElement.compareTo(secondElement) > 0) {
+                    input.set(firstIndex, secondElement);
+                    input.set(secondIndex, firstElement);
+                }
+            } else {
+                break;
+            }
+
+            firstIndex += 2;
+            secondIndex += 2;
+        } while (secondIndex < input.size());
 
         System.out.println();
+
+        /*TODO: the array ,which will be traversed after the merge will be replaced with the result of the merge*/
     }
 
-    public static List<Integer> merge(List<Integer> left, List<Integer> right) {
+
+    public static List<Integer> mergeNonReference(List<Integer> left, List<Integer> right) {
         List<Integer> result = new ArrayList<>();
 
         int leftPosition = 0;
         int rightPosition = 0;
-        int max = Math.max(left.size(), right.size());
 
         while (leftPosition < left.size() && rightPosition < right.size()) {
             Integer leftElement = left.get(leftPosition);
