@@ -63,7 +63,7 @@ public class T01_Merge_Sort {
          * I. 0 to 3 with 4 to 7 ->      1 2 3 4 6 8 9 12 5 7 11
          * II. 8 to 11 with NOTHING ->     1 2 3 4 6 8 9 12 5 7 11
          * ------------------------------------------------------
-         * I. 0 to 7 with 8 to 11 ->     1 2 3 4 5 6 7 8 9 11 12
+         * I. 0 to 7 with 8 to NOTHING ->     1 2 3 4 5 6 7 8 9 11 12
          * */
 
         /*THIRD TRY: WORKING*/
@@ -81,31 +81,16 @@ public class T01_Merge_Sort {
          * III. 8 to 9 with 10 to 11 -> 1 2 9 12 3 4 6 8 5 7 11
          * -------------------------------------------------------
          * I. 0 to 3 with 4 to 7 ->  1 2 3 4 6 8 9 12 5 7 11
-         * II. 8 to 9 with NOTHING->  1 2 3 4 6 8 9 12 5 7 11
+         * II. 8 to 11 with NOTHING->  1 2 3 4 6 8 9 12 5 7 11
          * -------------------------------------------------------
-         * I. 0 to 7 with 8 to 9 ->  1 2 3 4 5 6 7 8 9 11 12
+         * I. 0 to 7 with 8 to 11 ->  1 2 3 4 5 6 7 8 9 11 12
          * */
 
+        int scaling = 0;
 
-        int firstIndex = 0;
-        int secondIndex = 1;
-
-        do {
-            if (secondIndex < input.size()) {
-                Integer firstElement = input.get(firstIndex);
-                Integer secondElement = input.get(secondIndex);
-
-                if (firstElement.compareTo(secondElement) > 0) {
-                    input.set(firstIndex, secondElement);
-                    input.set(secondIndex, firstElement);
-                }
-            } else {
-                break;
-            }
-
-            firstIndex += 2;
-            secondIndex += 2;
-        } while (secondIndex < input.size());
+        while (true) {
+            break;
+        }
 
         System.out.println();
 
@@ -145,6 +130,28 @@ public class T01_Merge_Sort {
         }
 
         return result;
+    }
+
+    public static void retiredReferenceInitSort(List<Integer> input) {
+        int firstIndex = 0;
+        int secondIndex = 1;
+
+        do {
+            if (secondIndex < input.size()) {
+                Integer firstElement = input.get(firstIndex);
+                Integer secondElement = input.get(secondIndex);
+
+                if (firstElement.compareTo(secondElement) > 0) {
+                    input.set(firstIndex, secondElement);
+                    input.set(secondIndex, firstElement);
+                }
+            } else {
+                break;
+            }
+
+            firstIndex += 2;
+            secondIndex += 2;
+        } while (secondIndex < input.size());
     }
 
    /* public static void start(List<Integer> left, List<Integer> right, List<Integer> leftSort, List<Integer> rightSort) {
