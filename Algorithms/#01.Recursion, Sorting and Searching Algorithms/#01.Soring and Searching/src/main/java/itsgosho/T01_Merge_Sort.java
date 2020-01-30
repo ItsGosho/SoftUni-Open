@@ -28,19 +28,15 @@ public class T01_Merge_Sort {
             add(40);
         }};
 
-        List<Double> inputThird1 = new ArrayList<>();
-        List<Double> inputThird2 = new ArrayList<>();
+        List<Double> inputMerge = new ArrayList<>();
+        List<Double> inputStream = new ArrayList<>();
 
-        for (int i = 0; i < 10 * 100000; i++) {
-            inputThird1.add(Math.random());
-            inputThird2.add(Math.random());
+        for (int i = 0; i < 1_000_000; i++) {
+            Double number = Math.random();
+
+            inputMerge.add(number);
+            inputStream.add(number);
         }
-
-
-        List<Double> input = inputThird1;
-
-        int startSubstr = 0;
-        int endSubstr = 1;
 
         /*FIRST TRY:* FAILED DUE TO WRONG GROUPING/
         /*                              0 1 2 3 4 5 6 7 8 9 10
@@ -107,130 +103,69 @@ public class T01_Merge_Sort {
             int leftStart = 0;
             int leftEnd = (scaling / 2) - 1;
             int rightStart = leftEnd + 1;
-            int rightEnd = (scaling - 1) < input.size() ? scaling - 1 : input.size() - 1;
+            int rightEnd = (scaling - 1) < inputMerge.size() ? scaling - 1 : inputMerge.size() - 1;
 
-            if (leftEnd > input.size() - 1) {
+            if (leftEnd > inputMerge.size() - 1) {
                 break;
             }
 
-            while (rightEnd < input.size()) {
-                /*TODO: change with reference*/
-                List<Double> leftElements = input.subList(leftStart, leftEnd + 1);
-                List<Double> rightElements = input.subList(rightStart, rightEnd + 1);
+            while (rightEnd < inputMerge.size()) {
+                /*TODO: MY MERGE IS 600ms of */
+                List<Double> leftElements = new ArrayList<>(inputMerge.subList(leftStart, leftEnd + 1));
+                List<Double> rightElements = new ArrayList<>(inputMerge.subList(rightStart, rightEnd + 1));
 
-                List<Double> result = mergeNonReference(leftElements, rightElements);
-
-                for (int i = 0; i <= rightEnd - leftStart; i++) {
-                    Double elementToReplace = result.get(i);
-                    input.set(leftStart + i, elementToReplace);
-                }
+                mergeReference(inputMerge, leftStart, leftElements, rightElements);
 
                 leftStart += scaling;
                 leftEnd += scaling;
                 rightStart += scaling;
                 rightEnd += scaling;
             }
-
-            if (1 == 2) {
-                break;
-            }
         }
 
         stopWatch.stop();
-        System.out.println(stopWatch.toString());
-
+        System.out.println("My Merge Sort: " + stopWatch.toString());
         stopWatch.reset();
-        stopWatch.start();
-        inputThird2.sort((x1, x2) -> x2.compareTo(x1));
-        stopWatch.stop();
-        System.out.println(stopWatch.toString());
 
-        /*TODO: the array ,which will be traversed after the merge will be replaced with the result of the merge*/
+        stopWatch.start();
+        inputStream.sort((x1, x2) -> x2.compareTo(x1));
+        stopWatch.stop();
+        System.out.println("Java`s Sort: " + stopWatch.toString());
     }
 
-
-    public static List<Double> mergeNonReference(List<Double> left, List<Double> right) {
-        List<Double> result = new ArrayList<>();
-
+    @Deprecated
+    public static <T extends Comparable> void mergeReference(List<T> original, int leftStart, List<T> left, List<T> right) {
         int leftPosition = 0;
         int rightPosition = 0;
+        int positioner = leftStart;
 
         while (leftPosition < left.size() && rightPosition < right.size()) {
-            Double leftElement = left.get(leftPosition);
-            Double rightElement = right.get(rightPosition);
+            T leftElement = left.get(leftPosition);
+            T rightElement = right.get(rightPosition);
 
             if (leftElement.compareTo(rightElement) <= 0) {
-                result.add(leftElement);
+                original.set(positioner, leftElement);
                 leftPosition++;
             } else if (leftElement.compareTo(rightElement) > 0) {
-                result.add(rightElement);
+                original.set(positioner, rightElement);
                 rightPosition++;
             }
+
+            positioner++;
         }
 
         if (leftPosition < left.size()) {
             for (int i = leftPosition; i < left.size(); i++) {
-                Double leftElement = left.get(i);
-                result.add(leftElement);
+                T leftElement = left.get(i);
+                original.set(positioner, leftElement);
+                positioner++;
             }
         } else if (rightPosition < right.size()) {
             for (int i = rightPosition; i < right.size(); i++) {
-                Double rightElement = right.get(i);
-                result.add(rightElement);
+                T rightElement = right.get(i);
+                original.set(positioner, rightElement);
+                positioner++;
             }
         }
-
-        return result;
     }
-
-    public static void retiredReferenceInitSort(List<Integer> input) {
-        int firstIndex = 0;
-        int secondIndex = 1;
-
-        do {
-            if (secondIndex < input.size()) {
-                Integer firstElement = input.get(firstIndex);
-                Integer secondElement = input.get(secondIndex);
-
-                if (firstElement.compareTo(secondElement) > 0) {
-                    input.set(firstIndex, secondElement);
-                    input.set(secondIndex, firstElement);
-                }
-            } else {
-                break;
-            }
-
-            firstIndex += 2;
-            secondIndex += 2;
-        } while (secondIndex < input.size());
-    }
-
-   /* public static void start(List<Integer> left, List<Integer> right, List<Integer> leftSort, List<Integer> rightSort) {
-        System.out.println();
-
-        List<Integer> leftFirstHalf = left.subList(0, Math.round((left.size() + 1) / 2));
-        List<Integer> leftSecondHalf = left.subList(Math.round((left.size() + 1) / 2), left.size());
-
-        if (leftSecondHalf.size() != 0) {
-            start(leftFirstHalf, leftSecondHalf, leftSort, rightSort);
-        } else {
-
-            return;
-        }
-
-        List<Integer> rightFirstHalf = right.subList(0, Math.round((right.size() + 1) / 2));
-        List<Integer> rightSecondHalf = rig
-
-
-        ht.subList(Math.round((right.size() + 1) / 2), right.size());
-
-        if (rightSecondHalf.size() != 0) {
-            start(rightFirstHalf, rightSecondHalf, leftSort, rightSort);
-        } else {
-
-            *//*SORT*//*
-            return;
-        }
-    }*/
-
 }
