@@ -99,7 +99,6 @@ public class T01_Merge_Sort {
         while (true) {
             scaling *= 2;
 
-            //This will give us the first line of indexes in each start , and the INSIDE of start logic left
             int leftStart = 0;
             int leftEnd = (scaling / 2) - 1;
             int rightStart = leftEnd + 1;
@@ -110,7 +109,6 @@ public class T01_Merge_Sort {
             }
 
             while (rightEnd < inputMerge.size()) {
-                /*TODO: MY MERGE IS 600ms of */
                 List<Double> leftElements = new ArrayList<>(inputMerge.subList(leftStart, leftEnd + 1));
                 List<Double> rightElements = new ArrayList<>(inputMerge.subList(rightStart, rightEnd + 1));
 
@@ -123,6 +121,7 @@ public class T01_Merge_Sort {
             }
         }
 
+        //My +20/30ms of 1_000_000 elements ,compared to the integrated.
         stopWatch.stop();
         System.out.println("My Merge Sort: " + stopWatch.toString());
         stopWatch.reset();
