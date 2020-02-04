@@ -44,7 +44,7 @@ public class T02_Quick_Sort {
 
     private static <T extends Comparable<T>> void quickSort(List<T> elements) {
         //initial sort
-        int pivotPosition = proceedPivot(0, elements.size() - 1, elements);
+        int pivotPosition = quickSort(0, elements.size() - 1, elements);
         test(0, pivotPosition - 1, elements);
         test(pivotPosition + 1, elements.size() - 1, elements);
     }
@@ -55,20 +55,15 @@ public class T02_Quick_Sort {
             return;
         }
 
-        int pivotPosition = proceedPivot(start, end, elements);
+        int pivotPosition = quickSort(start, end, elements);
 
         test(0, pivotPosition - 1, elements);
         test(pivotPosition + 1, end, elements);
     }
 
-    //Directly under quickSort
-    private static <T extends Comparable<T>> int proceedPivot(int start, int end, List<T> elements) {
-        int pivotIndex = start + (Math.max(start, end) - Math.min(start, end)) / 2;
-        Collections.swap(elements, pivotIndex, end);
-        return quickSort(start, end, elements);
-    }
-
     private static <T extends Comparable<T>> int quickSort(int start, int end, List<T> elements) {
+
+        proceedPivot(start, end, elements);
 
         int iPivot = end;
         T pivot = elements.get(end);
@@ -114,5 +109,11 @@ public class T02_Quick_Sort {
         }
 
         return iPivot;
+    }
+
+    //Directly under quickSort
+    private static <T extends Comparable<T>> void proceedPivot(int start, int end, List<T> elements) {
+        int pivotIndex = start + (Math.max(start, end) - Math.min(start, end)) / 2;
+        Collections.swap(elements, pivotIndex, end);
     }
 }
