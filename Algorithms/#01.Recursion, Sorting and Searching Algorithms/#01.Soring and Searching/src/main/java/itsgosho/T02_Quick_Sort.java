@@ -18,50 +18,101 @@ public class T02_Quick_Sort {
             add(6);
         }};
 
+        List<Integer> inputSecond = new ArrayList<Integer>() {{
+            add(1);
+            add(3);
+            add(2);
+        }};
+
+        List<Integer> inputThird = new ArrayList<Integer>() {{
+            add(3);
+            add(8);
+            add(1);
+            add(7);
+            add(6);
+            add(2);
+            add(5);
+            add(4);
+            add(9);
+        }};
+
         List<Integer> input = inputFirst;
 
-        quickSort(inputFirst, 0, inputFirst.size() - 1);
+        quickSort(input);
+        System.out.println();
     }
 
-    /*
-     * To achieve working with reference we will need the start and end of the array.
-     * The original array will be passed
-     * The arrayStart will be used as a moving point
-     * The arrayEnd will be used as a moving point and pivot
-     * */
-    private static <T extends Comparable<T>> void quickSort(List<T> originalElements, int arrayStart, int arrayEnd) {
+    private static <T extends Comparable<T>> void quickSort(List<T> elements) {
+        //initial sort
+        int pivotPosition = proceedPivot(0, elements.size() - 1, elements);
+        test(0, pivotPosition - 1, elements);
+        test(pivotPosition + 1, elements.size() - 1, elements);
+    }
 
-        int iPivot = arrayEnd;
-        T pivot = originalElements.get(arrayEnd);
+    private static <T extends Comparable<T>> void test(int start, int end, List<T> elements) {
 
-        while (arrayStart <= arrayEnd) {
-            while (arrayStart <= arrayEnd) {
-                T currentElement = originalElements.get(arrayStart);
-
-                if (currentElement.compareTo(pivot) > 0) {
-                    break;
-                }
-
-                arrayStart++;
-            }
-
-            while (arrayEnd >= arrayStart) {
-                T currentElement = originalElements.get(arrayEnd);
-
-                if (currentElement.compareTo(pivot) < 0) {
-                    break;
-                }
-
-                arrayEnd--;
-            }
-
-
-            Collections.swap(originalElements, arrayStart, arrayEnd);
-
-            arrayStart++;
-            arrayEnd--;
+        if (start >= end || end >= elements.size()) {
+            return;
         }
 
-        Collections.swap(originalElements, arrayStart, iPivot);
+        int pivotPosition = proceedPivot(start, end, elements);
+
+        test(0, pivotPosition - 1, elements);
+        test(pivotPosition + 1, end, elements);
+    }
+
+    //Directly under quickSort
+    private static <T extends Comparable<T>> int proceedPivot(int start, int end, List<T> elements) {
+        int pivotIndex = start + (Math.max(start, end) - Math.min(start, end)) / 2;
+        Collections.swap(elements, pivotIndex, end);
+        return quickSort(start, end, elements);
+    }
+
+    private static <T extends Comparable<T>> int quickSort(int start, int end, List<T> elements) {
+
+        int iPivot = end;
+        T pivot = elements.get(end);
+        boolean isFound = false;
+
+        while (start <= end) {
+
+            while (start <= end) {
+                T currentElement = elements.get(start);
+
+                if (currentElement.compareTo(pivot) > 0) {
+                    isFound = true;
+                    break;
+                }
+
+                start++;
+            }
+
+            while (end >= start) {
+                T currentElement = elements.get(end);
+
+                if (currentElement.compareTo(pivot) < 0) {
+                    isFound = true;
+                    break;
+                }
+
+                end--;
+            }
+
+            if (start <= end) {
+                Collections.swap(elements, start, end);
+
+                start++;
+                end--;
+            } else {
+                break;
+            }
+        }
+
+        if (isFound) {
+            Collections.swap(elements, start, iPivot);
+            iPivot = start;
+        }
+
+        return iPivot;
     }
 }
