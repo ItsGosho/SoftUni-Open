@@ -132,7 +132,6 @@ public class T01_Merge_Sort {
         System.out.println("Java`s Sort: " + stopWatch.toString());
     }
 
-    @Deprecated
     public static <T extends Comparable> void mergeReference(List<T> original, int leftStart, List<T> left, List<T> right) {
         int leftPosition = 0;
         int rightPosition = 0;

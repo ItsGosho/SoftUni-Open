@@ -48,25 +48,29 @@ public class T03_Binary_Search {
     }
 
     private static <T extends Comparable<T>> int findElement(List<T> elements, T element, int start, int end) {
-        int pivotIndex = start + (Math.max(start, end) - Math.min(start, end)) / 2;
+        int mediumIndex = getMediumIndex(start, end);
 
-        if (pivotIndex > end) {
+        if (mediumIndex > end) {
             return -1;
         }
 
-        T currentElement = elements.get(pivotIndex);
+        T currentElement = elements.get(mediumIndex);
 
         if (currentElement.compareTo(element) == 0) {
-            return pivotIndex;
+            return mediumIndex;
         } else if (currentElement.compareTo(element) > 0) {
             //left
-            return findElement(elements, element, start, pivotIndex - 1);
+            return findElement(elements, element, start, mediumIndex - 1);
         } else if (currentElement.compareTo(element) < 0) {
             //right
-            return findElement(elements, element, pivotIndex + 1, end);
+            return findElement(elements, element, mediumIndex + 1, end);
         }
 
-        return pivotIndex;
+        return mediumIndex;
+    }
+
+    private static int getMediumIndex(int start, int end) {
+        return start + (Math.max(start, end) - Math.min(start, end)) / 2;
     }
 
 }
