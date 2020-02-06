@@ -57,7 +57,7 @@ public class T02_Quick_Sort {
 
         int pivotPosition = quickSort(start, end, elements);
 
-        test(0, pivotPosition - 1, elements);
+        test(start + 1, pivotPosition - 1, elements);
         test(pivotPosition + 1, end, elements);
     }
 
