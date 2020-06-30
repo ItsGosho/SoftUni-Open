@@ -1,0 +1,8 @@
+----MERGE SORT---
+1.It can be implemented both recursively and iterative
+  PROS and CONS:
+    - The recursively way can be used with threads ,which will achieve the Divide and Conquer meaning of the whole alghorithm
+    (Not 100% sure ,but if the merging and sorting doesn't collied with the indexes in the iterative way it will be easy)
+    - The recursively way can full the stack
+    - The iterative way can't full the stack ,because the CPU will get it
+- With simple words ,the whole idea is to achieve n + log(n) ,because in the iterative way the first n iteration can be seen more easily and the rest one are the merging
