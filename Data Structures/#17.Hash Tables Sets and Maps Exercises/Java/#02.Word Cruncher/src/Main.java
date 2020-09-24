@@ -14,6 +14,7 @@ public class Main {
         WordTree wordTree = new WordTree(new Node(input2, givenWords));
         List<String> foundWords = wordTree.getFoundWordsSortedDesc();
         System.out.println(String.join("\r\n", foundWords));
+
     }
 
     public static class WordTree {
@@ -164,6 +165,10 @@ public class Main {
             this.nodes = nodes;
         }
 
+        public HashMap<String, Integer> getPossibleValues() {
+            return possibleValues;
+        }
+
         public void setPossibleValues(HashSet<String> possibleValues) {
             for (String s : possibleValues) {
                 if (this.possibleValues.containsKey(s))
@@ -171,10 +176,6 @@ public class Main {
                 else
                     this.possibleValues.put(s, 1);
             }
-        }
-
-        public HashMap<String, Integer> getPossibleValues() {
-            return possibleValues;
         }
 
         public void setPossibleValues(HashMap<String, Integer> possibleValues) {
