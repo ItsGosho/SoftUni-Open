@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-bool areArraysEqual(std::vector<int> first, std::vector<int> second);
+bool areArraysEqual(std::vector<int> firstArr, std::vector<int> secondArr);
 
 int main()
 {
@@ -36,14 +36,14 @@ int main()
     return 0;
 }
 
-bool areArraysEqual(const std::vector<int> first,const std::vector<int> second) {
+bool areArraysEqual(const std::vector<int> firstArr, const std::vector<int> secondArr) {
 
-    if(first.size() != second.size())
+    if(firstArr.size() != secondArr.size())
         return false;
 
-    for (int i = 0; i < first.size(); ++i) {
-        int firstElement = first[i];
-        int secondElement = second[i];
+    for (int i = 0; i < firstArr.size(); ++i) {
+        int firstElement = firstArr[i];
+        int secondElement = secondArr[i];
 
         if(firstElement != secondElement)
             return false;
