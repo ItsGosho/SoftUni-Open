@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/Company.h
+string
+-
+istream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/OrderedInserter.h
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/Company.h
+vector
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/vector
+algorithm
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/algorithm
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/Company.h
+OrderedInserter.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#03.Order/OrderedInserter.h
+

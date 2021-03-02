@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/Company.h
+string
+-
+istream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/ProfitCalculator.h
+istream
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/Company.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/ProfitReport.h
+string
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/string
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/Company.h
+map
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/map
+ProfitCalculator.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/ProfitCalculator.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+map
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/Company.h
+ProfitCalculator.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/ProfitCalculator.h
+ProfitReport.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#04.Profits/ProfitReport.h
+
