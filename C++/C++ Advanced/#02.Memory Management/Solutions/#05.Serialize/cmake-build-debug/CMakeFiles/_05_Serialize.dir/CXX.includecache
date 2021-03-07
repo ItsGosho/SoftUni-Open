@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/Company.h
+istream
+-
+ostream
+-
+string
+-
+vector
+-
+utility
+-
+exception
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/Serialize.h
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/Company.h
+string
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/string
+sstream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/main.cpp
+iostream
+-
+string
+-
+vector
+-
+sstream
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/Company.h
+Serialize.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#05.Serialize/Serialize.h
+
