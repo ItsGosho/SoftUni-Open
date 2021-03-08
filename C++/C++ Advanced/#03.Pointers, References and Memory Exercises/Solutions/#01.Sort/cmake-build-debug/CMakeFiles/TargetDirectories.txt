@@ -1,0 +1,3 @@
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#01.Sort/cmake-build-debug/CMakeFiles/_01_Sort.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#01.Sort/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#01.Sort/cmake-build-debug/CMakeFiles/rebuild_cache.dir
