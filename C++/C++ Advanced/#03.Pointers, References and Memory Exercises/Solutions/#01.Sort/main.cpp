@@ -12,9 +12,7 @@ bool sortById(const Company &c1, const Company &c2) {
     return c1.getId() < c2.getId();
 }
 
-
-
-int main() {
+std::vector<Company> readCompaniesFromConsole() {
 
     std::vector<Company> companies;
     std::string line;
@@ -31,13 +29,29 @@ int main() {
         companies.push_back(company);
     }
 
+    return companies;
+}
+
+std::string readSortParameterFromConsole() {
     std::string sortParameter;
     std::cin >> sortParameter;
+    return sortParameter;
+}
+
+void sortBySortParameter(const std::string &sortParameter, std::vector<Company> &companies) {
 
     if (sortParameter == "id")
         std::sort(companies.begin(), companies.end(), sortById);
     else if (sortParameter == "name")
         std::sort(companies.begin(), companies.end(), sortByName);
+}
+
+int main() {
+
+    std::vector<Company> companies = readCompaniesFromConsole();
+    std::string sortParameter = readSortParameterFromConsole();
+
+    sortBySortParameter(sortParameter, companies);
 
     for (Company company : companies) {
         std::cout << company.toString() << std::endl;
