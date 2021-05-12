@@ -1,0 +1,3 @@
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#01.Compile/cmake-build-debug/CMakeFiles/_01_Compile.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#01.Compile/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#01.Compile/cmake-build-debug/CMakeFiles/rebuild_cache.dir

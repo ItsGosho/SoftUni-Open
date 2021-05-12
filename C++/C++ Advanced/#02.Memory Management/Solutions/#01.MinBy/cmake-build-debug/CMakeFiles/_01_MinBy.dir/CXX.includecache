@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#01.MinBy/MinBy.h
+string
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#01.MinBy/string
+vector
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#01.MinBy/vector
+algorithm
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#01.MinBy/algorithm
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#01.MinBy/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+MinBy.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#01.MinBy/MinBy.h
+

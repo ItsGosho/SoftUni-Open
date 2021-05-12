@@ -1,0 +1,52 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Comparators.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Parser.h
+string
+-
+vector
+-
+Parser.tpp
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Parser.tpp
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Parser.tpp
+sstream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/PrintUtils.h
+iostream
+-
+sstream
+-
+vector
+-
+set
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Song.h
+string
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/main.cpp
+iostream
+-
+string
+-
+set
+-
+Song.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Song.h
+Parser.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Parser.h
+Comparators.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/Comparators.h
+PrintUtils.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#05.Sorting/PrintUtils.h
+

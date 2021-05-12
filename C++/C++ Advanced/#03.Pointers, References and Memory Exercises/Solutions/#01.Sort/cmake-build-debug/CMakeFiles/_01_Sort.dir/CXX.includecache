@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#01.Sort/Company.h
+string
+-
+sstream
+-
+vector
+-
+utility
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#01.Sort/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#01.Sort/Company.h
+algorithm
+-
+

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/Company.h
+string
+-
+istream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/Find.h
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/Company.h
+vector
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/vector
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/Company.h
+Find.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#02.Find/Find.h
+

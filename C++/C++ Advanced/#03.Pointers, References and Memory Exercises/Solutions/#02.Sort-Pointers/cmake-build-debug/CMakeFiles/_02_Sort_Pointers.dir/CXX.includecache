@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/Company.h
+string
+-
+sstream
+-
+vector
+-
+utility
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/SortBy.h
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/Company.h
+algorithm
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/algorithm
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/Company.h
+SortBy.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#02.Sort-Pointers/SortBy.h
+

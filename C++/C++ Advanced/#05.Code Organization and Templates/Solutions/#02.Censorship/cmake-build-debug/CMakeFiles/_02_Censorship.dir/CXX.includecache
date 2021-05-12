@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#02.Censorship/Article13Filter.cpp
+Article13Filter.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#02.Censorship/Article13Filter.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#02.Censorship/Article13Filter.h
+string
+-
+vector
+-
+set
+-
+

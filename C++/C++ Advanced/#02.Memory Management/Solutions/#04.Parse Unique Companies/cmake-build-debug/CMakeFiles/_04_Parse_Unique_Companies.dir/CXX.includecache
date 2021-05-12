@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/Company.h
+string
+-
+sstream
+-
+vector
+-
+utility
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/ParseCompanies.h
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/Company.h
+string
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/string
+map
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/map
+vector
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/vector
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+list
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/Company.h
+ParseCompanies.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#04.Parse Unique Companies/ParseCompanies.h
+

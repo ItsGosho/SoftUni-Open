@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/Company.h
+string
+-
+sstream
+-
+vector
+-
+utility
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/MakeCompany.h
+string
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/string
+vector
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/vector
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/Company.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/Company.h
+MakeCompany.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/MakeCompany.h
+

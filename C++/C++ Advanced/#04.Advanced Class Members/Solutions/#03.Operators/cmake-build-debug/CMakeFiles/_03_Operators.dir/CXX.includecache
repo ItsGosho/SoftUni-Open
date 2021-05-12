@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#03.Operators/Operators.h
+ostream
+-
+vector
+-
+string
+-
+sstream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#03.Operators/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Operators.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#03.Operators/Operators.h
+

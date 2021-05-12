@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/Company.h
+string
+-
+vector
+-
+utility
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/CompanyMemoryUtils.h
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/Company.h
+vector
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/vector
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/main.cpp
+iostream
+-
+string
+-
+vector
+-
+sstream
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/Company.h
+CompanyMemoryUtils.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#01. C++ Pointers and References/Solutions/#05.Memory/CompanyMemoryUtils.h
+

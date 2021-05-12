@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/Parser.h
+string
+-
+vector
+-
+Parser.tpp
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/Parser.tpp
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/Parser.tpp
+sstream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/PrintUtils.h
+string
+-
+vector
+-
+PrintUtils.tpp
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/PrintUtils.tpp
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/PrintUtils.tpp
+PrintUtils.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/PrintUtils.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Parser.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/Parser.h
+PrintUtils.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#05.Code Organization and Templates/Solutions/#03.Parser/PrintUtils.h
+
