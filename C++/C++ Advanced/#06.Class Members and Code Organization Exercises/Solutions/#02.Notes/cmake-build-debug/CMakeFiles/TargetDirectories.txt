@@ -1,0 +1,3 @@
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/cmake-build-debug/CMakeFiles/_02_Notes.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

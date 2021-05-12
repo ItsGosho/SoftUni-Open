@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/Company.h
+istream
+-
+ostream
+-
+string
+-
+vector
+-
+utility
+-
+exception
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/RemoveDuplicates.h
+list
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/Company.h
+algorithm
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/algorithm
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+list
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/Company.h
+RemoveDuplicates.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#03.Pointers, References and Memory Exercises/Solutions/#03.Duplicates/RemoveDuplicates.h
+

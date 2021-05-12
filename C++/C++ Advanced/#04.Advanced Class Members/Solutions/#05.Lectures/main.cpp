@@ -42,5 +42,12 @@ int main() {
         std::cout << type << ": " << lecture[type] << std::endl;
     }
 
+    /*
+     * TODO:
+     * 1. Why is == not called and how can I change the erase process
+     * 2. Refactor the code and make it smaller
+     *
+     * */
+
     return 0;
 }

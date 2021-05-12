@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/ContactManagerUI.cpp
+ContactManagerUI.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/ContactManagerUI.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/ContactManagerUI.h
+vector
+-
+EmailContact.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/EmailContact.h
+Echo.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/Echo.h
+algorithm
+-
+sstream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/Echo.cpp
+Echo.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/Echo.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/Echo.h
+iostream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/EmailContact.cpp
+EmailContact.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/EmailContact.h
+sstream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/EmailContact.h
+string
+-
+ostream
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Echo.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/Echo.h
+EmailContact.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/EmailContact.h
+ContactManagerUI.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#01.Echo/ContactManagerUI.h
+

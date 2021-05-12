@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/Resource.h
+ResourceType.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/ResourceType.h
+string
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/string
+iostream
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/iostream
+algorithm
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/algorithm
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/ResourceType.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/main.cpp
+iostream
+-
+vector
+-
+set
+-
+map
+-
+ResourceType.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/ResourceType.h
+Resource.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#04.Resources/Resource.h
+

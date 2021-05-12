@@ -31,9 +31,7 @@ namespace SoftUni {
 
         friend bool operator<(const Resource& r1, const Resource& r2);
 
-        bool operator==(const Resource& resource) const {
-            return this->id == resource.id;
-        }
+        friend bool operator==(const Resource& r1, const Resource& r2);
 
         friend std::istream& operator>>(std::istream& istream, Resource& resource);
 
@@ -64,6 +62,10 @@ namespace SoftUni {
 
     bool operator<(const Resource& r1, const Resource& r2) {
         return r1.getId() < r2.getId();
+    }
+
+    bool operator==(const Resource& r1 ,const Resource& r2) {
+        return r1.id == r2.id;
     }
 
     std::istream& operator>>(std::istream& istream, Resource& resource) {

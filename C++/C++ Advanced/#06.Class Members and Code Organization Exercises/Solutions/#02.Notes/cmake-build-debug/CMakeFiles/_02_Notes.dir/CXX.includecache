@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/NoteName.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/SolfegeNoteNaming.h
+string
+-
+NoteName.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/NoteName.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/main.cpp
+iostream
+-
+string
+-
+vector
+-
+NoteName.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/NoteName.h
+SolfegeNoteNaming.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#06.Class Members and Code Organization Exercises/Solutions/#02.Notes/SolfegeNoteNaming.h
+

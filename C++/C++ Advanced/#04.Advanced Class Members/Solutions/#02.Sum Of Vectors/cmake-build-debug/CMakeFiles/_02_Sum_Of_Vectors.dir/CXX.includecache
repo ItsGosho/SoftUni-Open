@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#02.Sum Of Vectors/SumOfVectors.h
+string
+-
+vector
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#02.Sum Of Vectors/main.cpp
+SumOfVectors.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#02.Sum Of Vectors/SumOfVectors.h
+vector
+-
+string
+-
+iostream
+-
+

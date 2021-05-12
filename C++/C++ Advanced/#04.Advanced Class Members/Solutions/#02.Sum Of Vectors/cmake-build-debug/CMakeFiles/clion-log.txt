@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "C:\Users\Gosho\Desktop\GitHub\SoftUni Open\C++\C++ Advanced\#04.Advanced Class Members\Solutions\#02.Sum Of Vectors"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#04.Advanced Class Members/Solutions/#02.Sum Of Vectors/cmake-build-debug

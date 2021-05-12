@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/Company.h
+string
+-
+sstream
+-
+vector
+-
+utility
+-
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/RemoveInvalid.h
+list
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/list
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/Company.h
+
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+list
+-
+Company.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/Company.h
+RemoveInvalid.h
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#02.Remove Invalid/RemoveInvalid.h
+

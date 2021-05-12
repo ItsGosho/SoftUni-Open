@@ -1,0 +1,3 @@
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/cmake-build-debug/CMakeFiles/_03_Make_Company.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Gosho/Desktop/GitHub/SoftUni Open/C++/C++ Advanced/#02.Memory Management/Solutions/#03.Make Company/cmake-build-debug/CMakeFiles/rebuild_cache.dir
